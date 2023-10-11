@@ -79,4 +79,6 @@ export default class Speakers extends Vue {
   position: relative;
   left: -50px;
 }
+
+
 </style>

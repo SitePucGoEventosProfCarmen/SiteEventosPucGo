@@ -265,42 +265,131 @@ export default class MiniCourses extends Vue {
     this.speakers = [
       
       {
-        name: 'André Luiz',
+        name: 'André Luiz Alvez',
         institution: '',
         speaking: 'Engenharia de software',
-        description: `Formada pela FAMIH-BH/MG, possui especialização em Arquitetura Hospitalar pelo IAB-SP e Administração Hospitalar pela São Camilo, em São Paulo. Em seu escritório, desenvolve projetos relevantes em várias cidades do país, de diversas naturezas e escalas. Com passagem pela docência, hoje tem tido a oportunidade de dividir seu trabalho com estudantes de arquitetura por meio de palestras. Além disso, em seu escritório recebe eventualmente estagiários,  contribuindo assim também com a formação de futuros profissionais.
-`,
-        subjectResume: `
-  As práticas profissionais da Arquitetura Hospitalar – um campo de atuação e o mercado de trabalho segundo a experiência da arquiteta urbanista
-`,
-        img: '/assets/img/speakers/andre.jpg',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/andre_luiz_alvez.jpg',
         customSize: '100%',
         datentime: {
-          date: '11/05',
-          time: '07:30 - 09:00',
-          place: 'Auditório Marisa Roriz, área III'
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 11:00',
+          time2: '09:00 - 11:00',
+          place: 'Teams ou Incubadora da PUC Goiás'
         }
       },
 
       {
-        name: 'Fabrício Schlag',
+        name: 'Lucília Gomes Ribeiro',
         institution: '',
         speaking: 'Engenharia de software',
-        description: `Atuo a 7 anos na empresa GTMAX3D líder nacional em fabricação de impressoras 3D, iniciei minha carreira na empresa como estagiário de técnico em eletrônica, durante meus primeiros 3 anos na empresa lidei diretamente com o setor de montagem dos equipamentos onde pude adquirir o máximo de conhecimento técnico possível.
-  Com o reconhecimento da empresa ha 3 anos atuo como suporte técnico lidando diretamente com cliente e manutenções dos equipamentos comercializados pela empresa.
-
-    `,
-        subjectResume: `
-  Experiências da empresa com o mercado de impressão 3D, seus produtos, oportunidades e mercado de trabalho.
-`,
-        img: 'https://i.imgur.com/5jTG7on.jpg',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/lucilia_gomes_ribeiro.jpg',
         customSize: '100%',
         datentime: {
-          date: '11/05',
-          time: '10:00 - 11:30',
-          place: 'Online: Youtube'
+          date: '18/10',
+          date2: '19/10',
+          time: '14:00 - 17:00',
+          time2: '14:00 - 17:00',
+          place: 'Online: Teams'
         }
-      }      
+      },
+
+      {
+        name: 'Geraldo Valeriano Ribeiro',
+        institution: '',
+        speaking: 'Engenharia de Dados',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/geraldo_valeriano_ribeiro.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',          
+          time: '19:00 - 22:00',        
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Fernando Gonçalves Abadia',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/fernando_goncalves_abadia.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 12:15',
+          time2: '09:00 - 12:15',
+          place: 'Teams ou Incubadora da PUC Goiás'
+        }
+      },
+
+      {
+        name: 'Angelica da Silva Nunes',
+        institution: '',
+        speaking: 'Marketing',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/angelica_da_silva_nunes.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          time: '09:00 - 11:00',
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Fabricio Schlag',
+        institution: '',
+        speaking: 'Engenharia de software',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 11:00',
+          time2: '09:00 - 11:00',
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Max Gontijo de Oliveira',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '',
+          time: '',          
+          place: ''
+        }
+      },
+
+      {
+        name: 'Daniel Correa da Silva',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '',
+          time: '',          
+          place: ''
+        }
+      }
+
+
     ]
         
     this.coursesList = miniCourses_Section

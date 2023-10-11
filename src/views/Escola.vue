@@ -1114,4 +1114,10 @@ export default class Escola extends Vue {
 #mepros:hover {
   transform: scale(1);
 }
+
+.list-cursos{
+  list-style-type: none;
+}
+
+
 </style>
