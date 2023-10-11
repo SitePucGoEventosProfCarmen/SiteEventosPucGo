@@ -57,6 +57,23 @@
   font-size: 12pt;
   font-weight: 700;
 }
+.miniCourse .date-time-place {
+  display: grid;
+  grid-area: desc;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 15px;
+  margin-top: 0px;
+}
+.miniCourse .date-time-place i {
+  text-align: center;
+  font-size: 32pt;
+  margin-bottom: 15px;
+}
+.miniCourse .date-time-place > div {
+  text-align: center;
+  font-size: 12pt;
+  font-weight: 700;
+}
 .miniCourse .desc {
   grid-area: desc;
 }

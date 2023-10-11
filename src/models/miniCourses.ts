@@ -3,9 +3,9 @@ let Courses = [
    
   {
     title: "Design Thinking",
-    instructor: "Genilda",
+    instructor: "Profa. Dra. Genilda da Silva Alexandria Sousa",
     institution: "PUC Goiás",
-    desc: `O curso de design thinking terá como objetivo...`,
+    desc: ``,
     date: "17/10",
     time: "19:30",
     place: "Presencial: Auditório III Área II",
@@ -13,12 +13,12 @@ let Courses = [
   }, 
   {
     title: "Sobre Github",
-    instructor: "",
+    instructor: "Não definido",
     institution: "PUC Goiás",
-    desc: `O curso sobre Github terá como objetivo...`,
+    desc: ``,
     date: "18/10",
     time: "15:00",
-    place: 'Ainda não definido.'
+    place: 'Não definido.'
   
   /*  link: ""
     */
@@ -26,12 +26,13 @@ let Courses = [
 
   {
     title: "Prototipação para Hackathons",
-    instructor: 'Rafael Leal',
-    institution: 'Professor da PUC Goiás.',
-    desc: `O curso de prototipação para hackathons tem o objetivo de ...`,
+    instructor: 'Prof. Me. Rafael Leal Martins',
+    institution: 'PUC Goiás.',
+    desc: ``,
     date: '18/10',
     time: '16:00',
-    place: 'Ainda não definido.'
+    place: 'Microsoft Teams',
+    link: ""
   
   },
 
@@ -39,54 +40,53 @@ let Courses = [
     title: "Criando Protótipos com Figma",
     instructor: 'Tayna',
     institution: 'PUC Goiás',
-    desc: `O curso de criação de protótipos com Figma tem o objetivo de ...`,
+    desc: ``,
     date: '18/10',
     time: '17:00',
-    place: 'Ainda não definido.',
-    //link: ""
+    place: 'Microsoft Teams',
+    link: ""
   
   },
   
   {
-    title: "HTML – a crash course",
+    title: "HTML - a crash course",
     instructor: 'Hiagho Junio Gomes Oliveira',
-    institution: 'Aluno da PUC Goiás',
-    desc: `O curso de HTML tem o objetivo de ...`,
+    institution: 'PUC Goiás',
+    desc: ``,
     date: '18/10',
     time: '19:30',
-    place: 'Ainda não definido.',
-    //link: ""
+    place: 'Microsoft Teams',
+    link: ""
   },
 
   {
     title: "Docker na Prática: Criando e Gerenciando Contêineres " +
            "para Desenvolvimento e Produção",
-
     instructor: 'Daniel Correa',
-    institution: 'Professor da PUC Goiás',
-    desc: `Este curso de docker tem o objetivo de...`,
+    institution: 'PUC Goiás',
+    desc: ``,
     date: '19/10',
     time: '09:00',
-    place: 'Ainda não definido.',
-    //link: ""
+    place: 'Microsoft Teams',
+    link: ""
   },
   
   {
     title: "Pitch - técnicas de uma apresentação campeã",
-    instructor: '',
-    institution: 'Professor da PUC Goiás',
-    desc: `Este curso tem o objetivo de...`,
+    instructor: 'Lucilia Gomes Ribeiro',
+    institution: 'PUC Goiás',
+    desc: ``,
     date: '19/10',
     time: '15:00',
-    place: 'Ainda não definido.',
-    //link: ""
+    place: 'Microsoft Teams',
+    link: ""
   },
 
   {
-    title: "Exercícios de Relaxamento",
-    instructor: 'Luri Sabina',
-    institution: 'Professor da PUC Goiás',
-    desc: `Este curso tem o objetivo de...`,
+    title: "Exercícios de Relaxamento para um bom Pitch",
+    instructor: 'Luri Sabina Cosme da Silva Matos',
+    institution: 'PUC Goiás',
+    desc: ``,
     date: '19/10',
     time: '17:30',
     place: 'Ainda não definido.',
