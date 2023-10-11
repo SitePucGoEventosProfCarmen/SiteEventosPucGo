@@ -20,7 +20,10 @@
         </h6>
         <!--<h6 :title="course.responsible">Responsável: {{course.responsible}}</h6> -->
       </div>
-      <div class="date-time-place">
+      
+    </div>
+
+    <div class="date-time-place">
         <i class="far fa-calendar-alt"></i>
         <i class="far fa-clock"></i>
         <i class="fas fa-map-marker-alt"></i>
@@ -31,13 +34,12 @@
           <div v-if="course.link == null">{{ course.place }}</div>
         </div>
       </div>
-    </div>
 
-    <div class="desc">
+    <!--<div class="desc">
       <p>
         {{ course.desc }}
       </p>
-    </div>
+    </div>-->
   </div>
 </template>
 
