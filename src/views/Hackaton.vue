@@ -284,7 +284,7 @@ export default class MiniCourses extends Vue {
       {
         name: 'Lucília Gomes Ribeiro',
         institution: '',
-        speaking: 'Engenharia de software',
+        speaking: '',
         description: '',
         subjectResume: '',
         img: '/assets/img/speakers/lucilia_gomes_ribeiro.jpg',
