@@ -35,12 +35,13 @@
         <h2>MENTORES</h2>
         <br>
         <br>
+
         <div class="mentor">          
             <div class="pessoa-informacao">
               <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>GERALDO VALERIANO RIBEIRO</h4>
-                <p>Engenharia Software</p>
+                <p>Engenharia de Dados</p>
               </div>
             </div>
 
@@ -64,13 +65,15 @@
             
             </div>
         </div>
+
         <hr>
+
         <div class="mentor">
             <div class="pessoa-informacao">
               <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>ANDRÉ LUIZ ALVEZ</h4>
-                <p>Engenharia de Dados</p>
+                <p>Engenharia de Software</p>
               </div>
             </div>
 
@@ -95,7 +98,106 @@
               </div>
             </div>
         </div>
+                
         <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Fabricio Schlag</h4>
+                <p>Engenharia de Software</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 11:00</p></div>
+                  <div><p>09:00 - 11:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Teams ou incubadora</p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/angelica_da_silva_nunes.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Angelica da Silva Nunes</h4>
+                <p>Marketing</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>                  
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 11:00</p></div>                  
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Online: Teams</p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/anibal_santos_jukemura.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Anibal Santos Jukemura</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>18:45 - 22:00</p></div>
+                  <div><p>18:45 - 22:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Online: Teams</p></div>
+              </div>
+            </div>
+        </div>
+        
+        <hr>
+
       </div>
       
     </Main>    
