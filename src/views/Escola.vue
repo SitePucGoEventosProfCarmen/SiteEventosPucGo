@@ -187,10 +187,7 @@
         ), criado em 2009. Atualmente oferece vários cursos de especializações e
         extensão.
         <br />
-        Um dos principais objetivos da Escola é a qualificação da pesquisa e a
-        Jornada Científica tem por objetivo oportunizar e estimular os
-        discentes, egressos, docentes de graduação e pós-graduação a
-        participarem da produção e divulgação do conhecimento científico.
+
       </Paragraph>
     </Main>
 
