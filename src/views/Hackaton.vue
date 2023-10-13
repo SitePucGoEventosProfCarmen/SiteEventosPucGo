@@ -915,9 +915,6 @@ h4 {
 
 }
 
-div {
-  border: 1px solid red;
-}
 
 </style>
 
