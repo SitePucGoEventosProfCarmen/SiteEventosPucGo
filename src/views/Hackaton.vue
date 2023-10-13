@@ -19,13 +19,13 @@
           <button class="button">Edital</button>
         </a>
       </div>
-
-      <div class="courses-list" id="cursos" v-if="visibleCursos">
-        <div v-for="(props, index) in coursesList" :key="index">
+      <div class="courses-list" id="cursos" >
+        <div v-for="(props, index) in coursesList" :key="index" v-if="flag">
+          <!--<h3 class="section-course">{{ props.curso }}</h3> -->
           <div v-for="(course, index) in props.minicurso" :key="index">
             <MiniCourse :course="course"></MiniCourse>
             <hr />
-          </div>
+          </div>                    
         </div>
       </div>
 
@@ -163,177 +163,324 @@
     <div id="checkpoint" v-if="visibleCheckpoint">
         <Programacao id="checkpoint-element"></Programacao>
     </div>
-
-    
   </div>
 
     
 </template>
 
 <script lang="ts">
-  
-  import PhotoHeader from '../components/organization/PhotoHeader.vue'
-  import Main from '../components/organization/Main.vue'
-  import Paragraph from '@/components/organization/Paragraph.vue'
-  import Speakers from '@/components/organization/Speakers.vue'
-  import MiniCourse from '../components/miniCourse/index.vue'
-  import Programacao from './Programacao.vue'
-  import { miniCourses_Section } from '@/models/miniCourses'
-  
+import { Component, Vue, Prop } from 'vue-property-decorator'
+import PhotoHeader from '../components/organization/PhotoHeader.vue'
+import Main from '../components/organization/Main.vue'
+import Paragraph from '@/components/organization/Paragraph.vue'
+import Speakers from '@/components/organization/Speakers.vue'
+import MiniCourse from '../components/miniCourse/index.vue'
 
-export default {
+
+
+import { miniCourses_Section } from '@/models/miniCourses'
+import Programacao from './Programacao.vue'
+
+@Component({
   components: {
-    PhotoHeader, 
+    PhotoHeader,
     Main,
+    MiniCourse,
     Paragraph,
     Speakers,
-    MiniCourse,
     Programacao
-  },
+  }
+})
+export default class MiniCourses extends Vue {
+  private speakers: any = null
+  private coursesList: any
+  private filtered_courses: any
 
-  props: {
-    title: {
-      type: String,
-      default: ""
-    },
-
-    description: {
-      type: String,
-      default: ""
-    },
-
-    background: {
-      type: String,
-      default: "assets/img/bannerhackthon.png"
-    }
-    
-  },
-
-  data() {
-    return {
-      visibleCheckpoint : false,
-      visibleMentores   : false,
-      visibleCursos     : false,
-      visibleGeral      : true,
-      filtered_courses  : {},
-      coursesList       : miniCourses_Section,      
-      speakers          : [{
-        
-            name: 'André Luiz',
-            institution: '',
-            speaking: 'Engenharia de software',
-            description: '',
-            subjectResume: '',
-            img: '/assets/img/speakers/andre.jpg',
-            customSize: '100%',
-            datentime: {            
-              date: '',
-              time: '',
-              place: ''
-            }
-          },
-
-          {
-            name: 'Fabrício Schlag',
-            institution: '',
-            speaking: 'Engenharia de software',
-            description: '',
-            subjectResume: '',
-            img: 'https://i.imgur.com/5jTG7on.jpg',
-            customSize: '100%',
-            datentime: {
-              date: '11/05',
-              time: '10:00 - 11:30',
-              place: 'Online: Youtube'
-            }
-          }
-        ]
-      }
-      
-    },
+  private title = ''
+  private description = ''
+  private background = 'assets/img/bannerhackthon.png'
   
+  
+  //variáveis de estados:
+  private visibleCheckpoint = false;
+  private visibleMentores = false;
+  private visibleCursos = false;
+  private visibleGeral = true;
 
-  methods: {
+  public flag = false;
 
-    mostrar_apenas_geral() {
+  ocultar_mentores() {
+    const mentores = document.getElementById("mentores");
+    mentores.style.visibility = "hidden"
 
-      this.visibleCheckpoint  = false;
-      this.visibleMentores    = false;
-      this.visibleCursos      = false;
-      this.visibleGeral       = true;
+    this.visibleMentores = false;
+  }
 
-      const func = () => {
-        const geral = document.getElementById("geral");
-        geral.scrollIntoView({behavior: "smooth"})
-      }
+  ocultar_lista_cursos() {
+    const cursos = document.getElementById("cursos")
+    cursos.style.visibility = "hidden"
+    cursos.style.height = "0px";
+    cursos.style.marginBottom = "0px";
 
-      setTimeout(func, 100);
-    },
+    this.visibleCursos = false;
+  }
 
-    mostrar_apenas_checkpoint() {
-      
-      this.visibleMentores    = false;
-      this.visibleCursos      = false;
-      this.visibleGeral       = false;
-      this.visibleCheckpoint  = true;
+  ocultar_checkpoint() {
+    const checkpoint = document.getElementById("checkpoint")
+    checkpoint.style.visibility = "hidden";
 
-      const func = () =>{
-        const checkpoint = document.getElementById("checkpoint");
-        checkpoint.scrollIntoView({behavior: 'smooth'})
-      }
-      
-
-      setTimeout(func, 100);
-    },
-
-    filterCourses() {      
-      this.mostrar_apenas_lista_cursos()
-      //let data = e.target.innerText
-      let filtro = ''
-      this.filtered_courses = this.coursesList.map(item => {
-        const minicurso = item.minicurso.filter(aux => {
-          return aux.date == filtro
-        })
-
-        return { ...item, minicurso }
-      })
-
-      const func = () => {
-        const cursos = document.getElementById("cursos");
-        cursos.scrollIntoView({behavior: "smooth"})
-      }
-
-      setTimeout(func, 100);
-
-    },
-
-    mostrar_apenas_lista_cursos() {
-      this.visibleCheckpoint  = false;
-      this.visibleMentores    = false;      
-      this.visibleGeral       = false;
-      this.visibleCursos      = true;      
-    },
-
-    mostrar_apenas_mentores() {
-
-      this.visibleCheckpoint  = false;      
-      this.visibleCursos      = false;
-      this.visibleGeral       = false;
-      this.visibleMentores    = true;
-
-      const func = () => {
-        const mentores = document.getElementById("mentores");
-        mentores.scrollIntoView({behavior: "smooth"})
-      }
-
-      setTimeout(func, 100);
-
-    }
+    this.visibleCheckpoint = false;
 
   }
 
-}
+  ocultar_geral() {
+    const geral = document.getElementById("geral")
+    geral.style.visibility = "hidden";
 
+    this.visibleGeral = false;
+  }
+
+
+
+  mostrar_apenas_mentores() {
+    
+    if (this.visibleMentores) return
+
+    if (this.visibleCheckpoint)
+      this.ocultar_checkpoint()
+
+    if (this.visibleCursos)
+      this.ocultar_lista_cursos()
+
+    if (this.visibleGeral)      
+      this.ocultar_geral();
+
+    const mentores = document.getElementById("mentores");
+    mentores.style.visibility = "visible"
+    
+    this.visibleMentores = true;
+    mentores.scrollIntoView({behavior:"smooth"})
+  }
+
+  mostrar_apenas_lista_cursos() {
+    
+    if (this.visibleCursos) return
+
+    if (this.visibleCheckpoint)
+      this.ocultar_checkpoint()
+
+    if (this.visibleMentores)
+      this.ocultar_mentores()
+
+    if (this.visibleGeral)      
+      this.ocultar_geral();
+
+    const cursos = document.getElementById("cursos")
+    cursos.style.visibility = "visible"
+
+    this.visibleCursos = true;
+  }
+
+
+  mostrar_apenas_checkpoint() {
+
+    if (this.visibleCheckpoint) return
+
+    if (this.visibleCursos)
+      this.ocultar_lista_cursos()
+
+    if (this.visibleMentores)
+      this.ocultar_mentores()
+
+    if (this.visibleGeral)      
+      this.ocultar_geral();
+
+    const checkpoint = document.getElementById("checkpoint")
+    checkpoint.style.visibility = "visible"
+
+    this.visibleCheckpoint = true;
+    checkpoint.scrollIntoView({behavior: 'smooth'});
+  }
+
+  mostrar_apenas_geral() {
+    if (this.visibleGeral) return
+
+    if (this.visibleCursos)
+      this.ocultar_lista_cursos()
+
+    if (this.visibleMentores)
+      this.ocultar_mentores()
+
+    if (this.visibleCheckpoint)      
+      this.ocultar_checkpoint();
+
+    const geral = document.getElementById("geral")
+    geral.style.visibility = "visible"
+
+    this.visibleGeral = true;
+
+    geral.scrollIntoView({behavior: 'smooth'});
+  }
+
+
+  filterCourses(e: any) {
+    this.flag = true;
+    this.mostrar_apenas_lista_cursos()
+    //let data = e.target.innerText
+    let filtro = ''
+    this.filtered_courses = this.coursesList.map(item => {
+      const minicurso = item.minicurso.filter(aux => {
+        return aux.date == filtro
+      })
+
+      return { ...item, minicurso }
+    })
+
+    const cursos = document.getElementById("cursos");
+    cursos.scrollIntoView({behavior: "smooth"})
+  }
+
+  clearFilter() {
+    this.mostrar_apenas_lista_cursos()
+    this.filtered_courses = this.coursesList
+  }
+
+  constructor() {
+    super()    
+    this.speakers = [
+      
+      {
+        name: 'André Luiz Alvez',
+        institution: '',
+        speaking: 'Engenharia de software',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/andre_luiz_alvez.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 11:00',
+          time2: '09:00 - 11:00',
+          place: 'Teams ou Incubadora da PUC Goiás'
+        }
+      },
+
+      {
+        name: 'Lucília Gomes Ribeiro',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/lucilia_gomes_ribeiro.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '14:00 - 17:00',
+          time2: '14:00 - 17:00',
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Geraldo Valeriano Ribeiro',
+        institution: '',
+        speaking: 'Engenharia de Dados',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/geraldo_valeriano_ribeiro.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',          
+          time: '19:00 - 22:00',        
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Fernando Gonçalves Abadia',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/fernando_goncalves_abadia.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 12:15',
+          time2: '09:00 - 12:15',
+          place: 'Teams ou Incubadora da PUC Goiás'
+        }
+      },
+
+      {
+        name: 'Angelica da Silva Nunes',
+        institution: '',
+        speaking: 'Marketing',
+        description: '',
+        subjectResume: '',
+        img: '/assets/img/speakers/angelica_da_silva_nunes.jpg',
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          time: '09:00 - 11:00',
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Fabricio Schlag',
+        institution: '',
+        speaking: 'Engenharia de software',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '18/10',
+          date2: '19/10',
+          time: '09:00 - 11:00',
+          time2: '09:00 - 11:00',
+          place: 'Online: Teams'
+        }
+      },
+
+      {
+        name: 'Max Gontijo de Oliveira',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '',
+          time: '',          
+          place: ''
+        }
+      },
+
+      {
+        name: 'Daniel Correa da Silva',
+        institution: '',
+        speaking: '',
+        description: '',
+        subjectResume: '',        
+        customSize: '100%',
+        datentime: {
+          date: '',
+          time: '',          
+          place: ''
+        }
+      }
+
+
+    ]
+        
+    this.coursesList = miniCourses_Section
+    this.filtered_courses = this.coursesList
+  }
+}
 </script>
 
 <style scoped>
@@ -353,7 +500,6 @@ export default {
     0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
   padding: 1rem;
 }
-
 .button-container {
   display: flex;
   flex-direction: row;
@@ -419,20 +565,16 @@ h4 {
 
 
 #mentores {
-  
-  margin-top: 0px;
-  bottom: 0px;
-  visibility: visible;
+  position: relative;
+  margin-top: "-600px";
+  bottom: 100px;
+  visibility: hidden;
   margin-bottom: 0px;
-}
-
-#mentores hr {
-  border: 1px solid #000;
 }
 
 #root {
   position: relative;
-  margin-bottom: 0px;  
+  margin-bottom: 0px;
   
 }
 
@@ -447,11 +589,10 @@ h4 {
 
 #checkpoint {
   position: relative;
-  margin-bottom: 0px;
-  margin-top: -150px;
+  margin-bottom: -1200px;
   padding-top: 0px;
-  bottom: 0px;
-  visibility: visible;
+  bottom: 1430px;
+  visibility: hidden;
 }
 
 #checkpoint-element {
@@ -462,12 +603,12 @@ h4 {
   position: relative;
   margin-bottom: 0px;
   visibility: visible;
-  bottom: 0px;
+  bottom: 600px;
   width: 70%;
   margin: 20px auto;
 }
 
-#geral h2, h3, h4 {
+#geral h2, h3 {
   color: #2776f5;
 }
 
@@ -493,16 +634,24 @@ h4 {
 
 @media screen and (max-width: 471px) {
 
+  #root {
+    margin-bottom: -200px;
+  }
 
   #mentores {
     bottom: -30px;
   }
-  
+
+  #geral {
+    bottom: 520px;
+  }
 }
 
 @media screen and (max-width: 371px) {
 
- 
+  #root {
+    margin-bottom: -400px;
+  }
 
   #body {
     bottom: 3000px;
@@ -515,10 +664,32 @@ h4 {
 
 }
 
+@media screen and (max-width: 1095px) {
 
+  #checkpoint {
+    bottom: 1550px;
+  }
+}
 
+@media screen and (max-width: 710px) {
 
-@media screen and (max-width: 331px) {  
+  #checkpoint {
+    bottom: 1710px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  #checkpoint {
+    bottom: 1760px;
+  }
+}
+
+@media screen and (max-width: 331px) {
+
+  #root {
+    margin-bottom: -500px;
+  }
 
   #mentores {
     margin-top: 300px;
@@ -528,130 +699,7 @@ h4 {
 
 }
 
-/*
 
-=========================================================================
-=========================================================================
-=========================================================================
-  
-
-                      secao dos mentores
-
-
-
-
-*/
-#mentores img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;    
-}
-
-.mentor {
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-}
-
-.pessoa-informacao {
-    margin: 10px;
-    display: flex;
-}
-
-.nome-e-descricao {
-    margin-left: 10px;
-    width: 300px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.conteiner-icones {
-    display: flex;
-    margin-right: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.data-hora {
-  display: flex;
-}
-
-.item {
-    margin: 0px 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.item i, p {
-    text-align: center;
-}
-
-.item div {
-    width: 100px;
-    word-wrap: break-word;
-    padding-top: 10px;
-    margin-bottom: -10px;
-
-}
-
-@media screen and (max-width: 1100px) {
-
-  #mentores {
-      display: flex;
-      margin: 10px;
-      flex-direction: column;        
-  }
-
-  .mentor {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pessoa-informacao {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .conteiner-icones {
-      display: flex;
-      flex-direction: column;
-      margin-right: 20px;
-      margin-top: 10px;
-      margin-bottom: 30px;
-  }
-
-  .data-hora {
-    margin: 0px auto;
-    padding: 0px;
-  }
-
-  .item div {
-    align-items: center;
-    margin-bottom: 5px;
-    margin: 0px auto;
-    margin-top: 5px;
-  }
-
-    
-}
-
-@media screen and (max-width: 576px) {
-
-  #mentores h2 {
-    text-align: center;
-  }
-
-
-}
-
-@media screen and (max-width: 421px) {
-
-  .data-hora .item {
-    margin: 0px
-  }
-
-
-}
 
 
 </style>
