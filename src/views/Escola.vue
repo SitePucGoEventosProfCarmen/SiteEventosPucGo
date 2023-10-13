@@ -206,38 +206,6 @@
 </template>
 
 <script lang="ts">
-/*
-import { Component, Vue } from 'vue-property-decorator'
-import PhotoHeader from '@/components/organization/PhotoHeader.vue'
-import Main from '@/components/organization/Main.vue'
-import Paragraph from '@/components/organization/Paragraph.vue'
-import HorizontalList from '@/components/organization/HorizontalList.vue'
-import Speakers from '@/components/organization/Speakers.vue'
-import Columns from '@/components/organization/Columns.vue'
-import Organization from '@/components/organization/Names.vue'
-
-
-@Component({
-  components: {
-    PhotoHeader,
-    Main,
-    HorizontalList,
-    Paragraph,
-    Speakers,
-    Columns,
-    Organization
-    //Supporters
-  }
-})
-export default class Escola extends Vue {
-  private speakers: any = null
-
-  constructor() {
-    super()
-    
-  }
-}
-*/
 
   
   import PhotoHeader from '@/components/organization/PhotoHeader.vue'
@@ -253,10 +221,6 @@ export default class Escola extends Vue {
       Paragraph
     }  
   
-
-
-
-
   }
 
 
@@ -307,6 +271,10 @@ export default class Escola extends Vue {
   width: 25rem;
 
   transition: transform 0.4s;
+}
+
+.list-cursos {
+  list-style-type: none;
 }
 
 .list-cursos li:hover {
