@@ -15,11 +15,12 @@
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
         <button class="button" v-on:click="">Avaliadores</button>    
-
-        <a href="../../public/assets/EDITAL DE CHAMADA DO HACKA PUC 2023.pdf" download="download">
+        <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" download="download">
           <button class="button">Edital</button>
-        </a>    
+        </a>
       </div>
+
+      
 
       <div class="courses-list" id="cursos" v-if="visibleCursos">
         <div v-for="(props, index) in coursesList" :key="index">
@@ -182,6 +183,7 @@
   import { Component, Vue, Prop } from 'vue-property-decorator'
   
 
+
   @Component({
   components: {
     PhotoHeader,
@@ -189,7 +191,7 @@
     MiniCourse,
     Paragraph,    
     Programacao
-  }
+  },
 })
 export default class MiniCourses extends Vue {  
 
@@ -210,6 +212,12 @@ export default class MiniCourses extends Vue {
   constructor() {
     super();
 
+  }
+
+  data () {
+    return {
+    publicPath: process.env.BASE_URL
+    }
   }
 
   mostrar_apenas_geral() {
