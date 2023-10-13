@@ -3,11 +3,11 @@
     <input type="checkbox" id="open-mmenu" :style="{ display: 'none' }" />
     <div class="mobile menu-mobile">
       <div>
-        <dir>
+
           <label for="open-mmenu">
             <i class="fa fa-times"></i>
           </label>
-        </dir>
+]
       </div>
       <ul>
         <!--<router-link to="/" tag="li">Home</router-link>

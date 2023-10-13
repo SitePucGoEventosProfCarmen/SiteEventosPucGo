@@ -14,12 +14,30 @@
       <br>
       <i>{{speaker.speaking2}}</i>
     </div>
-    <div class="more">
-      <v-btn color="primary" @click="showProfile(speaker.name)">Leia completo</v-btn>
-    </div>
+
+<!--    <div class="more">-->
+<!--      <v-btn color="primary" @click="showProfile(speaker.name)">Leia completo</v-btn>-->
+<!--    </div>-->      
 
     <div class="n1"></div>
     <div class="n2"></div>
+
+    <div class="informacoes">
+        <div class="item">
+          <i class="far fa-calendar-alt fa-3x"></i>
+          <div><p>{{ speaker.datentime.date }}</p></div>
+          <div v-if="speaker.datentime.date2"><p>{{ speaker.datentime.date2 }}</p></div>
+        </div>
+        <div class="item">
+          <i class="far fa-clock fa-3x"></i>
+          <div><p>{{ speaker.datentime.time }}</p></div>
+          <div v-if="speaker.datentime.date2"><p>{{ speaker.datentime.time2 }}</p></div>
+        </div>
+        <div class="item">
+          <i class="fas fa-map-marker-alt fa-3x"></i>
+          <div><p>{{ speaker.datentime.place }}</p></div>          
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,13 +55,13 @@ export default class Speaker extends Vue {
 
   constructor() {
     super();
-    /*
+    
     this.avatar = this.speaker.img
       ? `url(${this.speaker.img})`
       : `url(https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg)`;
-    */
+    
 
-    this.avatar = `url(https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg)`;``
+    //this.avatar = `url(https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg)`;``
 
     this.customSize = this.speaker.customSize
       ? this.speaker.customSize
@@ -63,9 +81,10 @@ export default class Speaker extends Vue {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "avatar n1" "avatar name" "avatar institution" "avatar speaking" "avatar more" "avatar n2";
 }
+
 .speaker > * {
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 .speaker > * button {
   margin: 0;
@@ -153,4 +172,35 @@ export default class Speaker extends Vue {
     height: 140px;
   }
 }
+
+
+
+
+
+
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  margin:  15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.item i {
+  margin-bottom: 10px;
+}
+
+.item div {
+  margin: -5px;
+}
+
+
+
+
 </style>

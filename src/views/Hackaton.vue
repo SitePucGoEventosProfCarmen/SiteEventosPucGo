@@ -175,11 +175,13 @@
   import PhotoHeader from '../components/organization/PhotoHeader.vue'
   import Main from '../components/organization/Main.vue'
   import Paragraph from '@/components/organization/Paragraph.vue'
+
   import Speakers from '@/components/organization/Speakers.vue'
   import MiniCourse from '../components/miniCourse/index.vue'
   import Programacao from './Programacao.vue'
   import { miniCourses_Section } from '@/models/miniCourses'
   import { Component, Vue, Prop } from 'vue-property-decorator'
+
   
 
   @Component({

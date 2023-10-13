@@ -12,6 +12,7 @@
         Goiás (PUC Goiás) foi criada em agosto de 2021 com a junção de três escolas: 
         Escola de Artes e Arquitetura, Escola de Ciências Exatas e da Computação e 
         Escola de Engenharia. Atualmente são oferecidos 18 cursos de graduação, 
+
         sendo 11 presenciais, 5 semipresenciais e 2 ensino à distância.
 
         <div class="list-container">
@@ -173,6 +174,8 @@
         <br/>
         <br/>
         <br/>
+        <br>
+        
         Além de oferecer os seus próprios cursos, a Escola Politécnica e de Artes também é
         responsável pela área de Física, Matemática e Química com a criação do
         Núcleo de Pesquisa, Ensino e Extensão de Ciências Exatas. Escola Politécnica e de Artes 
@@ -187,25 +190,13 @@
         ), criado em 2009. Atualmente oferece vários cursos de especializações e
         extensão.
         <br />
-        Um dos principais objetivos da Escola é a qualificação da pesquisa e a
-        Jornada Científica tem por objetivo oportunizar e estimular os
-        discentes, egressos, docentes de graduação e pós-graduação a
-        participarem da produção e divulgação do conhecimento científico.
       </Paragraph>
     </Main>
-
-    <!--<Organization />
-    <Main>
-      <Paragraph title="palestrantes">
-        <Speakers :speakers="speakers" :paginate="1" />
-      </Paragraph>
-
-      <Supporters />
-    </Main>-->
   </div>
 </template>
 
 <script lang="ts">
+
 
   
   import PhotoHeader from '@/components/organization/PhotoHeader.vue'
@@ -222,6 +213,7 @@
     }  
   
   }
+
 
 
 
@@ -263,6 +255,10 @@
   color: black;
 }
 
+.list-cursos {
+  list-style-type: none;
+}
+
 .list-cursos li {
   background-color: #006ca3;
 
@@ -301,4 +297,10 @@
 #mepros:hover {
   transform: scale(1);
 }
+
+.list-cursos{
+  list-style-type: none;
+}
+
+
 </style>
