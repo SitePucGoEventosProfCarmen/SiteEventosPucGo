@@ -14,7 +14,7 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="">Avaliadores</button>    
+        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
 
         <a href="../../public/assets/EDITAL DE CHAMADA DO HACKA PUC 2023.pdf" download="download">
           <button class="button">Edital</button>
@@ -333,9 +333,38 @@
 
       </div>
       
+
+      <!--
+        ===================================================
+        ===================================================
+              FIM DE MENTORES E COMEÇO DE AVALIADORES 
+        ===================================================
+        ===================================================
+      -->
+
+      <div id="avaliadores" v-if="visibleAvaliadores">
+        <h2>AVALIADORES</h2>
+        <br>
+        <br>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-woman.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Mirian Sandra Rosa Gusmão</h4>
+                <p>Diretora da Escola Politécnica e de Artes</p>
+              </div>
+            </div>            
+        </div>
+
+
+        <hr>
+
+      </div>
+
+
+
     </Main>    
-
-
 
 
     <div id="geral" v-if="visibleGeral">
@@ -436,6 +465,7 @@ export default class MiniCourses extends Vue {
   private visibleMentores = false;
   private visibleCursos = false;
   private visibleGeral = true;
+  private visibleAvaliadores = false;
   private filtered_courses = {};
   private coursesList = miniCourses_Section;
   private title = "";
@@ -448,11 +478,11 @@ export default class MiniCourses extends Vue {
   }
 
   mostrar_apenas_geral() {
-
-  this.visibleCheckpoint  = false;
-  this.visibleMentores    = false;
-  this.visibleCursos      = false;
-  this.visibleGeral       = true;
+    this.visibleCheckpoint  = false;
+    this.visibleMentores    = false;
+    this.visibleCursos      = false;
+    this.visibleGeral       = true;
+    this.visibleAvaliadores = false;
 
   const func = () => {
     const geral = document.getElementById("geral");
@@ -469,6 +499,7 @@ export default class MiniCourses extends Vue {
     this.visibleCursos      = false;
     this.visibleGeral       = false;
     this.visibleCheckpoint  = true;
+    this.visibleAvaliadores = false;
 
     const func = () =>{
       const checkpoint = document.getElementById("checkpoint");
@@ -504,7 +535,8 @@ export default class MiniCourses extends Vue {
     this.visibleCheckpoint  = false;
     this.visibleMentores    = false;      
     this.visibleGeral       = false;
-    this.visibleCursos      = true;      
+    this.visibleCursos      = true;
+    this.visibleAvaliadores = false;
   }
 
   mostrar_apenas_mentores() {
@@ -513,10 +545,27 @@ export default class MiniCourses extends Vue {
     this.visibleCursos      = false;
     this.visibleGeral       = false;
     this.visibleMentores    = true;
+    this.visibleAvaliadores = false;
 
     const func = () => {
       const mentores = document.getElementById("mentores");
       mentores.scrollIntoView({behavior: "smooth"})
+    }
+
+    setTimeout(func, 100);
+
+  }
+
+  mostrar_apenas_avaliadores() {
+    this.visibleCheckpoint  = false;      
+    this.visibleCursos      = false;
+    this.visibleGeral       = false;
+    this.visibleMentores    = false;
+    this.visibleAvaliadores = true;
+
+    const func = () => {
+      const avaliadores = document.getElementById("avaliadores");
+      avaliadores.scrollIntoView({behavior: "smooth"})
     }
 
     setTimeout(func, 100);
@@ -611,7 +660,7 @@ h4 {
 }
 
 
-#mentores {
+#mentores #avaliadores{
   
   margin-top: 0px;
   bottom: 0px;
@@ -619,7 +668,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-#mentores hr {
+#mentores hr, #avaliadores hr {
   border: 1px solid #000;
 }
 
@@ -678,7 +727,7 @@ h4 {
     margin-bottom: -100px;
   }
 
-  #mentores {
+  #mentores, #avaliadores{
     bottom: 50px;
   }
   
@@ -687,7 +736,7 @@ h4 {
 @media screen and (max-width: 471px) {
 
 
-  #mentores {
+  #mentores, #avaliadores{
     bottom: -30px;
   }
   
@@ -702,7 +751,7 @@ h4 {
     padding-top: 0px;
   }
 
-  #mentores {
+  #mentores, #avaliadores {
     margin-top: 200px;
   }
 
@@ -713,7 +762,7 @@ h4 {
 
 @media screen and (max-width: 331px) {  
 
-  #mentores {
+  #mentores, #avaliadores {
     margin-top: 300px;
 
   }
@@ -734,13 +783,13 @@ h4 {
 
 
 */
-#mentores img {
+#mentores img, #avaliadores img {
     width: 150px;
     height: 150px;
     border-radius: 100%;    
 }
 
-.mentor {
+.mentor, .avalidador {
     display: flex;
     margin: 10px;
     justify-content: space-between;
@@ -789,13 +838,13 @@ h4 {
 
 @media screen and (max-width: 1100px) {
 
-  #mentores {
+  #mentores, #avaliadores {
       display: flex;
       margin: 10px;
       flex-direction: column;        
   }
 
-  .mentor {
+  .mentor, .avaliador {
     display: flex;
     flex-direction: column;
   }
@@ -830,7 +879,7 @@ h4 {
 
 @media screen and (max-width: 576px) {
 
-  #mentores h2 {
+  #mentores h2, #avaliadores h2 {
     text-align: center;
   }
 
