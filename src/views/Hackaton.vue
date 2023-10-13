@@ -14,7 +14,7 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="">Avaliadores (Faz nada)</button>
+        <button class="button" v-on:click="">Avaliadores</button>
         <!--<button class="button" v-on:click="filterCourses">12/05</button>
         <button class="button" v-on:click="filterCourses">13/05</button>-->
       </div>
