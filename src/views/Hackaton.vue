@@ -40,7 +40,7 @@
               <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>GERALDO VALERIANO RIBEIRO</h4>
-                <p>Engenharia de Dados</p>
+                <p>Engenharia Software</p>
               </div>
             </div>
 
