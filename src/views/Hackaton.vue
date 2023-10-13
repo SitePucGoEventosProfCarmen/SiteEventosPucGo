@@ -67,12 +67,12 @@
       <p style="text-align: left; font-size: 18px;">
         A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
         do desafio será revelado. As equipes devem trabalhar para 
-        poderem cuprir os checkpoints. Cada checkepoint representa 
+        poderem cumprir os checkpoints. Cada checkpoint representa 
         um marco no hackathon em que as equipes devem apresentar 
         os trabalhos solicitados dentro de um prazo. Os checkpoints 
         são de caráter eliminatório, isso significa que a cada 
         checkpoint menos equipes vão estar na disputa. Os resultados 
-        serão avaliados pela banca examinadora e publicados no site.      
+        serão avaliados pela banca examinadora e publicados no site.
       </p>
     </div>
     <div id="checkpoint">
