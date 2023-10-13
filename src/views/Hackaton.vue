@@ -14,150 +14,69 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="">Avaliadores (Faz nada)</button>        
+        <button class="button" v-on:click="">Avaliadores</button>
+        <!--<button class="button" v-on:click="filterCourses">12/05</button>
+        <button class="button" v-on:click="filterCourses">13/05</button>-->
       </div>
       <div class="courses-list" id="cursos" >
-        <div v-for="(props, index) in coursesList" :key="index" v-if="flag">          
+        <div v-for="(props, index) in coursesList" :key="index" v-if="flag">
+          <!--<h3 class="section-course">{{ props.curso }}</h3> -->
           <div v-for="(course, index) in props.minicurso" :key="index">
             <MiniCourse :course="course"></MiniCourse>
             <hr />
           </div>                    
         </div>
-      </div>
-
-      
-      <div id="mentores" v-if="visibleMentores">
-        <h2>MENTORES</h2>
-        <br>
-        <br>
-        <div class="mentor">          
-            <div class="pessoa-informacao">
-              <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
-              <div class="nome-e-descricao">
-                <h4>GERALDO VALERIANO RIBEIRO</h4>
-                <p>Engenharia de Dados</p>
-              </div>
-            </div>
-
-            <div class="conteiner-icones">              
-              <div class="data-hora">
-                <div class="item">
-                  <i class="far fa-calendar-alt fa-3x"></i>
-                  <div><p>18/10</p></div>
-                </div>
-
-                <div class="item">
-                  <i class="far fa-clock fa-3x"></i>
-                  <div><p>19:00 - 22:00</p></div>
-                </div>
-              </div>
-
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Online: Teams</p></div>
-                </div>
-            
-            </div>
-        </div>
-        <hr>
-        <div class="mentor">
-            <div class="pessoa-informacao">
-              <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
-              <div class="nome-e-descricao">
-                <h4>ANDRÉ LUIZ ALVEZ</h4>
-                <p>Engenharia de software</p>
-              </div>
-            </div>
-
-            <div class="conteiner-icones">
-              <div class="data-hora">
-                <div class="item">
-                  <i class="far fa-calendar-alt fa-3x"></i>
-                  <div><p>18/10</p></div>
-                  <div><p>19/10</p></div>
-                </div>
-
-                <div class="item">
-                  <i class="far fa-clock fa-3x"></i>
-                  <div><p>09:00 - 11:00</p></div>
-                  <div><p>09:00 - 11:00</p></div>
-                </div>
-              </div>
-
-              <div class="item local">
-                <i class="fas fa-map-marker-alt fa-3x"></i>
-                <div><p>Online: Teams</p></div>
-              </div>
-            </div>
-        </div>
-        <hr>
-      </div>
-      
-    </Main>    
-
-
-
-
-    <div id="geral" v-if="visibleGeral">
-        <h2>Hackapuc 2023</h2>
-        <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="font-size: 18px;">
-          Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
-          de 17 a 19 de outubro. A Hackapuc é um grande evento que envolve 
-          o desenvolvimento de uma solução inovadora para um determinado 
-          problema ou desafio. Os interessados devem formar grupos para 
-          participarem.
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <h3 style="text-align: left;">Campanha de Arrecadação</h3>
-        <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
-          Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. 
-          Doe alimentos não perecíveis ou itens de higiene pessoal e 
-          ganhe um botton do HackaPuc como agradecimento. 
-          Coleta será realizada no dia 17/10/2023 durante a abertura e 
-          no dia 19/10/2023 durante o encerramento no auditório 3 da área 2. 
-          Contamos com sua ajuda!!!!
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>      
-        <h3 style="text-align: left;">Inscrições</h3>
-        <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
-          As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
-          abertura da Hackapuc. Os interessados devem formar grupos 
-          e efetuar as incrições por meio de um formulário que será 
-          disponibilizado.
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>      
-        <h3 style="text-align: left;">Como Funciona</h3>
-        <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
-          A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
-          do desafio será revelado. As equipes devem trabalhar para 
-          poderem cumprir os checkpoints. Cada checkpoint representa 
-          um marco no hackathon em que as equipes devem apresentar 
-          os trabalhos solicitados dentro de um prazo. Os checkpoints 
-          são de caráter eliminatório, isso significa que a cada 
-          checkpoint menos equipes vão estar na disputa. Os resultados 
-          serão avaliados pela banca examinadora e publicados no site.     
-        </p>
+      </div>                                  
+    </Main>
+    <div id="mentores">
+      <Main id="body">
+        <Paragraph title="Mentores"></Paragraph>
+        <Speakers :speakers="speakers" :paginate="1" />            
+      </Main>
+    </div>    
+    <div id="geral">
+      <h2>Hackapuc 2023</h2>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="font-size: 18px;">
+        Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
+        de 17 a 19 de outubro. A Hackapuc é um grande evento que envolve 
+        o desenvolvimento de uma solução inovadora para um determinado 
+        problema ou desafio. Os interessados devem formar grupos para 
+        participarem.
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>      
+      <h3 style="text-align: left;">Inscrições</h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: left; font-size: 18px;">
+        As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
+        abertura da Hackapuc. Os interessados devem formar grupos 
+        e efetuar as incrições por meio de um formulário que será 
+        disponibilizado.
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>      
+      <h3 style="text-align: left;">Como Funciona</h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: left; font-size: 18px;">
+        A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
+        do desafio será revelado. As equipes devem trabalhar para 
+        poderem cumprir os checkpoints. Cada checkpoint representa 
+        um marco no hackathon em que as equipes devem apresentar 
+        os trabalhos solicitados dentro de um prazo. Os checkpoints 
+        são de caráter eliminatório, isso significa que a cada 
+        checkpoint menos equipes vão estar na disputa. Os resultados 
+        serão avaliados pela banca examinadora e publicados no site.
+      </p>
     </div>
-
-    
-    <div id="checkpoint" v-if="visibleCheckpoint">
-        <Programacao id="checkpoint-element"></Programacao>
+    <div id="checkpoint">
+      <Programacao id="checkpoint-element"></Programacao>
     </div>
   </div>
 
