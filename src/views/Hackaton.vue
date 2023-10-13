@@ -14,249 +14,237 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="">Avaliadores</button>
+        <button class="button" v-on:click="">Avaliadores</button>    
 
         <a href="../../public/assets/EDITAL DE CHAMADA DO HACKA PUC 2023.pdf" download="download">
           <button class="button">Edital</button>
-        </a>
-
+        </a>    
       </div>
-      <div class="courses-list" id="cursos" >
-        <div v-for="(props, index) in coursesList" :key="index" v-if="flag">
-          <!--<h3 class="section-course">{{ props.curso }}</h3> -->
+
+      <div class="courses-list" id="cursos" v-if="visibleCursos">
+        <div v-for="(props, index) in coursesList" :key="index">
           <div v-for="(course, index) in props.minicurso" :key="index">
             <MiniCourse :course="course"></MiniCourse>
             <hr />
-          </div>                    
+          </div>
         </div>
-      </div>                                  
-    </Main>
-    <div id="mentores">
-      <Main id="body">
-        <Paragraph title="Mentores"></Paragraph>
-        <Speakers :speakers="speakers" :paginate="1" />            
-      </Main>
-    </div>    
-    <div id="geral">
-      <h2>Hackapuc 2023</h2>
-      <hr style="border-top: 3px solid #333; margin: 20px auto;">
-      <p style="font-size: 18px;">
-        Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
-        de 17 a 19 de outubro. A Hackapuc é um grande evento que envolve 
-        o desenvolvimento de uma solução inovadora para um determinado 
-        problema ou desafio. Os interessados devem formar grupos para 
-        participarem.
-      </p>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h3 style="text-align: left;">Campanha de Arrecadação</h3>
-      <hr style="border-top: 3px solid #333; margin: 20px auto;">
-      <p style="text-align: left; font-size: 18px;">
-        Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
-        não perecíveis ou itens de higiene pessoal e ganhe um botton do HackaPuc 
-        como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
-        abertura e no dia 19/10/2023 durante o encerramento no auditório 3 da área 2. 
-        Contamos com sua ajuda!!!!
-      </p>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>      
-      <h3 style="text-align: left;">Inscrições</h3>
-      <hr style="border-top: 3px solid #333; margin: 20px auto;">
-      <p style="text-align: left; font-size: 18px;">
-        As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
-        abertura da Hackapuc. Os interessados devem formar grupos 
-        e efetuar as incrições por meio de um formulário que será 
-        disponibilizado.
-      </p>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>      
-      <h3 style="text-align: left;">Como Funciona</h3>
-      <hr style="border-top: 3px solid #333; margin: 20px auto;">
-      <p style="text-align: left; font-size: 18px;">
-        A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
-        do desafio será revelado. As equipes devem trabalhar para 
-        poderem cumprir os checkpoints. Cada checkpoint representa 
-        um marco no hackathon em que as equipes devem apresentar 
-        os trabalhos solicitados dentro de um prazo. Os checkpoints 
-        são de caráter eliminatório, isso significa que a cada 
-        checkpoint menos equipes vão estar na disputa. Os resultados 
-        serão avaliados pela banca examinadora e publicados no site.
-      </p>
+      </div>
+
+      
+      <div id="mentores" v-if="visibleMentores">
+        <h2>MENTORES</h2>
+        <br>
+        <br>
+        <div class="mentor">          
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>GERALDO VALERIANO RIBEIRO</h4>
+                <p>Engenharia de Dados</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">              
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>19:00 - 22:00</p></div>
+                </div>
+              </div>
+
+                <div class="item local">
+                  <i class="fas fa-map-marker-alt fa-3x"></i>
+                  <div><p>Online: Teams</p></div>
+                </div>
+            
+            </div>
+        </div>
+        <hr>
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>ANDRÉ LUIZ ALVEZ</h4>
+                <p>Engenharia de software</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 11:00</p></div>
+                  <div><p>09:00 - 11:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Online: Teams</p></div>
+              </div>
+            </div>
+        </div>
+        <hr>
+      </div>
+      
+    </Main>    
+
+
+
+
+    <div id="geral" v-if="visibleGeral">
+        <h2>Hackapuc 2023</h2>
+        <hr style="border-top: 3px solid #333; margin: 20px auto;">
+        <p style="font-size: 18px;">
+          Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
+          de 17 a 19 de outubro. A Hackapuc é um grande evento que envolve 
+          o desenvolvimento de uma solução inovadora para um determinado 
+          problema ou desafio. Os interessados devem formar grupos para 
+          participarem.
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/> 
+        <h3 style="text-align: left;">Campanha de Arrecadação</h3>
+        <hr style="border-top: 3px solid #333; margin: 20px auto;">
+        <p style="text-align: left; font-size: 18px;">
+          Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
+          não perecíveis ou itens de higiene pessoal e ganhe um botton do HackaPuc 
+          como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
+          abertura e no dia 19/10/2023 durante o encerramento no auditório 3 da área 2. 
+          Contamos com sua ajuda!!!!
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>     
+        <h3 style="text-align: left;">Inscrições</h3>
+        <hr style="border-top: 3px solid #333; margin: 20px auto;">
+        <p style="text-align: left; font-size: 18px;">
+          As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
+          abertura da Hackapuc. Os interessados devem formar grupos 
+          e efetuar as incrições por meio de um formulário que será 
+          disponibilizado.
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <h3 style="text-align: left;">Como Funciona</h3>
+        <hr style="border-top: 3px solid #333; margin: 20px auto;">
+        <p style="text-align: left; font-size: 18px;">
+          A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
+          do desafio será revelado. As equipes devem trabalhar para 
+          poderem cumprir os checkpoints. Cada checkpoint representa 
+          um marco no hackathon em que as equipes devem apresentar 
+          os trabalhos solicitados dentro de um prazo. Os checkpoints 
+          são de caráter eliminatório, isso significa que a cada 
+          checkpoint menos equipes vão estar na disputa. Os resultados 
+          serão avaliados pela banca examinadora e publicados no site.     
+        </p>
     </div>
-    <div id="checkpoint">
-      <Programacao id="checkpoint-element"></Programacao>
+
+    
+    <div id="checkpoint" v-if="visibleCheckpoint">
+        <Programacao id="checkpoint-element"></Programacao>
     </div>
+
+    
   </div>
 
     
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
-import PhotoHeader from '../components/organization/PhotoHeader.vue'
-import Main from '../components/organization/Main.vue'
-import Paragraph from '@/components/organization/Paragraph.vue'
-import Speakers from '@/components/organization/Speakers.vue'
-import MiniCourse from '../components/miniCourse/index.vue'
+  
+  import PhotoHeader from '../components/organization/PhotoHeader.vue'
+  import Main from '../components/organization/Main.vue'
+  import Paragraph from '@/components/organization/Paragraph.vue'
+  import Speakers from '@/components/organization/Speakers.vue'
+  import MiniCourse from '../components/miniCourse/index.vue'
+  import Programacao from './Programacao.vue'
+  import { miniCourses_Section } from '@/models/miniCourses'
+  import { Component, Vue, Prop } from 'vue-property-decorator'
+  
 
-
-
-import { miniCourses_Section } from '@/models/miniCourses'
-import Programacao from './Programacao.vue'
-
-@Component({
+  @Component({
   components: {
     PhotoHeader,
     Main,
     MiniCourse,
-    Paragraph,
-    Speakers,
+    Paragraph,    
     Programacao
   }
 })
-export default class MiniCourses extends Vue {
-  private speakers: any = null
-  private coursesList: any
-  private filtered_courses: any
+export default class MiniCourses extends Vue {  
 
-  private title = ''
-  private description = ''
-  private background = 'assets/img/bannerhackthon.png'
-  
-  
-  //variáveis de estados:
+  //@Prop(String) private title: String = "";
+  //@Prop(String) private description: String = "";
+  //@Prop(String) private background: String = "assets/img/bannerhackthon.png";
+
   private visibleCheckpoint = false;
   private visibleMentores = false;
   private visibleCursos = false;
   private visibleGeral = true;
+  private filtered_courses = {};
+  private coursesList = miniCourses_Section;
+  private title = "";
+  private description = "";
+  private background = "assets/img/bannerhackthon.png";
 
-  public flag = false;
+  constructor() {
+    super();
 
-  ocultar_mentores() {
-    const mentores = document.getElementById("mentores");
-    mentores.style.visibility = "hidden"
-
-    this.visibleMentores = false;
-  }
-
-  ocultar_lista_cursos() {
-    const cursos = document.getElementById("cursos")
-    cursos.style.visibility = "hidden"
-    cursos.style.height = "0px";
-    cursos.style.marginBottom = "0px";
-
-    this.visibleCursos = false;
-  }
-
-  ocultar_checkpoint() {
-    const checkpoint = document.getElementById("checkpoint")
-    checkpoint.style.visibility = "hidden";
-
-    this.visibleCheckpoint = false;
-
-  }
-
-  ocultar_geral() {
-    const geral = document.getElementById("geral")
-    geral.style.visibility = "hidden";
-
-    this.visibleGeral = false;
-  }
-
-
-
-  mostrar_apenas_mentores() {
-    
-    if (this.visibleMentores) return
-
-    if (this.visibleCheckpoint)
-      this.ocultar_checkpoint()
-
-    if (this.visibleCursos)
-      this.ocultar_lista_cursos()
-
-    if (this.visibleGeral)      
-      this.ocultar_geral();
-
-    const mentores = document.getElementById("mentores");
-    mentores.style.visibility = "visible"
-    
-    this.visibleMentores = true;
-    mentores.scrollIntoView({behavior:"smooth"})
-  }
-
-  mostrar_apenas_lista_cursos() {
-    
-    if (this.visibleCursos) return
-
-    if (this.visibleCheckpoint)
-      this.ocultar_checkpoint()
-
-    if (this.visibleMentores)
-      this.ocultar_mentores()
-
-    if (this.visibleGeral)      
-      this.ocultar_geral();
-
-    const cursos = document.getElementById("cursos")
-    cursos.style.visibility = "visible"
-
-    this.visibleCursos = true;
-  }
-
-
-  mostrar_apenas_checkpoint() {
-
-    if (this.visibleCheckpoint) return
-
-    if (this.visibleCursos)
-      this.ocultar_lista_cursos()
-
-    if (this.visibleMentores)
-      this.ocultar_mentores()
-
-    if (this.visibleGeral)      
-      this.ocultar_geral();
-
-    const checkpoint = document.getElementById("checkpoint")
-    checkpoint.style.visibility = "visible"
-
-    this.visibleCheckpoint = true;
-    checkpoint.scrollIntoView({behavior: 'smooth'});
   }
 
   mostrar_apenas_geral() {
-    if (this.visibleGeral) return
 
-    if (this.visibleCursos)
-      this.ocultar_lista_cursos()
+  this.visibleCheckpoint  = false;
+  this.visibleMentores    = false;
+  this.visibleCursos      = false;
+  this.visibleGeral       = true;
 
-    if (this.visibleMentores)
-      this.ocultar_mentores()
-
-    if (this.visibleCheckpoint)      
-      this.ocultar_checkpoint();
-
-    const geral = document.getElementById("geral")
-    geral.style.visibility = "visible"
-
-    this.visibleGeral = true;
-
-    geral.scrollIntoView({behavior: 'smooth'});
+  const func = () => {
+    const geral = document.getElementById("geral");
+    geral.scrollIntoView({behavior: "smooth"})
   }
 
+  setTimeout(func, 100);
+  }  
 
-  filterCourses(e: any) {
-    this.flag = true;
+
+  mostrar_apenas_checkpoint() {
+    
+    this.visibleMentores    = false;
+    this.visibleCursos      = false;
+    this.visibleGeral       = false;
+    this.visibleCheckpoint  = true;
+
+    const func = () =>{
+      const checkpoint = document.getElementById("checkpoint");
+      checkpoint.scrollIntoView({behavior: 'smooth'})
+    }
+    
+
+    setTimeout(func, 100);
+  }
+
+  filterCourses() {      
     this.mostrar_apenas_lista_cursos()
     //let data = e.target.innerText
     let filtro = ''
@@ -268,151 +256,42 @@ export default class MiniCourses extends Vue {
       return { ...item, minicurso }
     })
 
-    const cursos = document.getElementById("cursos");
-    cursos.scrollIntoView({behavior: "smooth"})
+    const func = () => {
+      const cursos = document.getElementById("cursos");
+      cursos.scrollIntoView({behavior: "smooth"})
+    }
+
+    setTimeout(func, 100);
+
   }
 
-  clearFilter() {
-    this.mostrar_apenas_lista_cursos()
-    this.filtered_courses = this.coursesList
+  mostrar_apenas_lista_cursos() {
+    this.visibleCheckpoint  = false;
+    this.visibleMentores    = false;      
+    this.visibleGeral       = false;
+    this.visibleCursos      = true;      
   }
 
-  constructor() {
-    super()    
-    this.speakers = [
-      
-      {
-        name: 'André Luiz Alvez',
-        institution: '',
-        speaking: 'Engenharia de software',
-        description: '',
-        subjectResume: '',
-        img: '/assets/img/speakers/andre_luiz_alvez.jpg',
-        customSize: '100%',
-        datentime: {
-          date: '18/10',
-          date2: '19/10',
-          time: '09:00 - 11:00',
-          time2: '09:00 - 11:00',
-          place: 'Teams ou Incubadora da PUC Goiás'
-        }
-      },
+  mostrar_apenas_mentores() {
 
-      {
-        name: 'Lucília Gomes Ribeiro',
-        institution: '',
-        speaking: '',
-        description: '',
-        subjectResume: '',
-        img: '/assets/img/speakers/lucilia_gomes_ribeiro.jpg',
-        customSize: '100%',
-        datentime: {
-          date: '18/10',
-          date2: '19/10',
-          time: '14:00 - 17:00',
-          time2: '14:00 - 17:00',
-          place: 'Online: Teams'
-        }
-      },
+    this.visibleCheckpoint  = false;      
+    this.visibleCursos      = false;
+    this.visibleGeral       = false;
+    this.visibleMentores    = true;
 
-      {
-        name: 'Geraldo Valeriano Ribeiro',
-        institution: '',
-        speaking: 'Engenharia de Dados',
-        description: '',
-        subjectResume: '',
-        img: '/assets/img/speakers/geraldo_valeriano_ribeiro.jpg',
-        customSize: '100%',
-        datentime: {
-          date: '18/10',          
-          time: '19:00 - 22:00',        
-          place: 'Online: Teams'
-        }
-      },
+    const func = () => {
+      const mentores = document.getElementById("mentores");
+      mentores.scrollIntoView({behavior: "smooth"})
+    }
 
-      {
-        name: 'Fernando Gonçalves Abadia',
-        institution: '',
-        speaking: '',
-        description: '',
-        subjectResume: '',
-        img: '/assets/img/speakers/fernando_goncalves_abadia.jpg',
-        customSize: '100%',
-        datentime: {
-          date: '18/10',
-          date2: '19/10',
-          time: '09:00 - 12:15',
-          time2: '09:00 - 12:15',
-          place: 'Teams ou Incubadora da PUC Goiás'
-        }
-      },
+    setTimeout(func, 100);
 
-      {
-        name: 'Angelica da Silva Nunes',
-        institution: '',
-        speaking: 'Marketing',
-        description: '',
-        subjectResume: '',
-        img: '/assets/img/speakers/angelica_da_silva_nunes.jpg',
-        customSize: '100%',
-        datentime: {
-          date: '18/10',
-          time: '09:00 - 11:00',
-          place: 'Online: Teams'
-        }
-      },
-
-      {
-        name: 'Fabricio Schlag',
-        institution: '',
-        speaking: 'Engenharia de software',
-        description: '',
-        subjectResume: '',        
-        customSize: '100%',
-        datentime: {
-          date: '18/10',
-          date2: '19/10',
-          time: '09:00 - 11:00',
-          time2: '09:00 - 11:00',
-          place: 'Online: Teams'
-        }
-      },
-
-      {
-        name: 'Max Gontijo de Oliveira',
-        institution: '',
-        speaking: '',
-        description: '',
-        subjectResume: '',        
-        customSize: '100%',
-        datentime: {
-          date: '',
-          time: '',          
-          place: ''
-        }
-      },
-
-      {
-        name: 'Daniel Correa da Silva',
-        institution: '',
-        speaking: '',
-        description: '',
-        subjectResume: '',        
-        customSize: '100%',
-        datentime: {
-          date: '',
-          time: '',          
-          place: ''
-        }
-      }
-
-
-    ]
-        
-    this.coursesList = miniCourses_Section
-    this.filtered_courses = this.coursesList
   }
+
 }
+
+
+
 </script>
 
 <style scoped>
@@ -432,6 +311,7 @@ export default class MiniCourses extends Vue {
     0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
   padding: 1rem;
 }
+
 .button-container {
   display: flex;
   flex-direction: row;
@@ -497,16 +377,20 @@ h4 {
 
 
 #mentores {
-  position: relative;
-  margin-top: "-600px";
-  bottom: 100px;
-  visibility: hidden;
+  
+  margin-top: 0px;
+  bottom: 0px;
+  visibility: visible;
   margin-bottom: 0px;
+}
+
+#mentores hr {
+  border: 1px solid #000;
 }
 
 #root {
   position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 0px;  
   
 }
 
@@ -521,10 +405,11 @@ h4 {
 
 #checkpoint {
   position: relative;
-  margin-bottom: -1200px;
+  margin-bottom: 0px;
+  margin-top: -150px;
   padding-top: 0px;
-  bottom: 1430px;
-  visibility: hidden;
+  bottom: 0px;
+  visibility: visible;
 }
 
 #checkpoint-element {
@@ -535,12 +420,12 @@ h4 {
   position: relative;
   margin-bottom: 0px;
   visibility: visible;
-  bottom: 600px;
+  bottom: 0px;
   width: 70%;
   margin: 20px auto;
 }
 
-#geral h2, h3 {
+#geral h2, h3, h4 {
   color: #2776f5;
 }
 
@@ -566,24 +451,16 @@ h4 {
 
 @media screen and (max-width: 471px) {
 
-  #root {
-    margin-bottom: -200px;
-  }
 
   #mentores {
     bottom: -30px;
   }
-
-  #geral {
-    bottom: 520px;
-  }
+  
 }
 
 @media screen and (max-width: 371px) {
 
-  #root {
-    margin-bottom: -400px;
-  }
+ 
 
   #body {
     bottom: 3000px;
@@ -596,32 +473,10 @@ h4 {
 
 }
 
-@media screen and (max-width: 1095px) {
 
-  #checkpoint {
-    bottom: 1550px;
-  }
-}
 
-@media screen and (max-width: 710px) {
 
-  #checkpoint {
-    bottom: 1710px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-
-  #checkpoint {
-    bottom: 1760px;
-  }
-}
-
-@media screen and (max-width: 331px) {
-
-  #root {
-    margin-bottom: -500px;
-  }
+@media screen and (max-width: 331px) {  
 
   #mentores {
     margin-top: 300px;
@@ -631,7 +486,130 @@ h4 {
 
 }
 
+/*
 
+=========================================================================
+=========================================================================
+=========================================================================
+  
+
+                      secao dos mentores
+
+
+
+
+*/
+#mentores img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;    
+}
+
+.mentor {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.pessoa-informacao {
+    margin: 10px;
+    display: flex;
+}
+
+.nome-e-descricao {
+    margin-left: 10px;
+    width: 300px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.conteiner-icones {
+    display: flex;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.data-hora {
+  display: flex;
+}
+
+.item {
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item i, p {
+    text-align: center;
+}
+
+.item div {
+    width: 100px;
+    word-wrap: break-word;
+    padding-top: 10px;
+    margin-bottom: -10px;
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  #mentores {
+      display: flex;
+      margin: 10px;
+      flex-direction: column;        
+  }
+
+  .mentor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pessoa-informacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteiner-icones {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+  }
+
+  .data-hora {
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  .item div {
+    align-items: center;
+    margin-bottom: 5px;
+    margin: 0px auto;
+    margin-top: 5px;
+  }
+
+    
+}
+
+@media screen and (max-width: 576px) {
+
+  #mentores h2 {
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 421px) {
+
+  .data-hora .item {
+    margin: 0px
+  }
+
+
+}
 
 
 </style>
