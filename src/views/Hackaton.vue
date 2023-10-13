@@ -323,7 +323,7 @@
 
               <div class="item local">
                 <i class="fas fa-map-marker-alt fa-3x"></i>
-                <div><p>Online: Teamns</p></div>
+                <div><p>Online: Teams</p></div>
               </div>
             </div>
         </div>
