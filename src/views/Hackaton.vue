@@ -16,7 +16,7 @@
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
         <button class="button" v-on:click="">Avaliadores</button>    
         <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" download="download">
-          <button class="button">Edital</button>
+          <button class="button">Download Edital</button>
         </a>
       </div>
 
@@ -119,9 +119,9 @@
         <br/>
         <br/>
         <br/> 
-        <h3 style="text-align: left;">Campanha de Arrecadação</h3>
+        <h3 style="text-align: justify;">Campanha de Arrecadação</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
+        <p style="text-align: justify; font-size: 18px;">
           Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
           não perecíveis ou itens de higiene pessoal e ganhe um botton do HackaPuc 
           como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
