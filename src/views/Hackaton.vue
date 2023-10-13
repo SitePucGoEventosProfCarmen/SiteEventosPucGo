@@ -211,7 +211,7 @@
               <img src="/assets/img/speakers/fernando_goncalves_abadia.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>Fernando Gonçalves Abadia</h4>
-                <p>programação/gameficação</p>
+                <p>Programação e gameficação</p>
               </div>
             </div>
 
@@ -277,7 +277,7 @@
               <img src="/assets/img/speakers/lucilia_gomes_ribeiro.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>Lucilia Gomes Ribeiro</h4>
-                <p>viabilidade, usabilidade</p>
+                <p>Viabilidade e usabilidade</p>
               </div>
             </div>
 
