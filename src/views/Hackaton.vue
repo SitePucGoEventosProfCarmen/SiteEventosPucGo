@@ -139,6 +139,7 @@ export default class MiniCourses extends Vue {
   private visibleCursos = false;
   private visibleGeral = true;
 
+  
   public flag = false;
 
   ocultar_mentores() {
