@@ -12,13 +12,13 @@ let Courses = [
     //link: ""
   }, 
   {
-    title: "Sobre Github",
-    instructor: "Não definido",
+    title: "Minicurso Sobre Github",
+    instructor: "Milton de Assis Ribeiro Neto",
     institution: "PUC Goiás",
     desc: ``,
     date: "18/10",
     time: "15:00",
-    place: 'Não definido.'
+    place: 'Microsoft Teams.'
   
   /*  link: ""
     */
@@ -32,19 +32,19 @@ let Courses = [
     date: '18/10',
     time: '16:00',
     place: 'Microsoft Teams',
-    link: ""
+    //link: ""
   
   },
 
   {
     title: "Criando Protótipos com Figma",
-    instructor: 'Tayna',
+    instructor: 'Tayná Rodrigues de Sousa Carvalho',
     institution: 'PUC Goiás',
     desc: ``,
     date: '18/10',
     time: '17:00',
     place: 'Microsoft Teams',
-    link: ""
+    //link: ""
   
   },
   
@@ -56,40 +56,40 @@ let Courses = [
     date: '18/10',
     time: '19:30',
     place: 'Microsoft Teams',
-    link: ""
+    //link: ""
   },
 
   {
     title: "Docker na Prática: Criando e Gerenciando Contêineres " +
            "para Desenvolvimento e Produção",
-    instructor: 'Daniel Correa',
+    instructor: 'Prof. Me. Daniel Correa da Silva',
     institution: 'PUC Goiás',
     desc: ``,
     date: '19/10',
     time: '09:00',
     place: 'Microsoft Teams',
-    link: ""
+    //link: ""
   },
   
   {
     title: "Pitch - técnicas de uma apresentação campeã",
-    instructor: 'Lucilia Gomes Ribeiro',
+    instructor: 'Profa. Me. Lucilia Gomes Ribeiro',
     institution: 'PUC Goiás',
     desc: ``,
     date: '19/10',
     time: '15:00',
     place: 'Microsoft Teams',
-    link: ""
+    //link: ""
   },
 
   {
     title: "Exercícios de Relaxamento para um bom Pitch",
-    instructor: 'Luri Sabina Cosme da Silva Matos',
+    instructor: 'Profa. Me. Luri Sabina Cosme da Silva Matos',
     institution: 'PUC Goiás',
     desc: ``,
     date: '19/10',
     time: '17:30',
-    place: 'Ainda não definido.',
+    place: 'Microsoft Teams',
     //link: ""
   },
 ]
