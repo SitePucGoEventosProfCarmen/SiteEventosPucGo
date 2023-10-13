@@ -94,7 +94,7 @@
 
               <div class="item local">
                 <i class="fas fa-map-marker-alt fa-3x"></i>
-                <div><p>Online: Teams</p></div>
+                <div><p>Teams ou incubadora</p></div>
               </div>
             </div>
         </div>
