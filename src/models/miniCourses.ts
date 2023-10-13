@@ -91,6 +91,16 @@ let Courses = [
     place: 'A definir',
     //link: ""
   },
+  {
+    title: "Evoluin na TI: Enxergando além dos computadores",
+    instructor: 'Iuri Cesar Caliman',
+    institution: 'PUC Goiás',
+    desc: ``,
+    date: '18/10',
+    time: '19:30',
+    place: 'Presencial: Auditório III Área III',
+    //link: ""
+  },
 ]
 
 /*
