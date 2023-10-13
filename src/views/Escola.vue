@@ -8,11 +8,11 @@
 
     <Main>
       <Paragraph title="Cursos">
-        A Escola Politécnica e de Artes da Pontifícia Universidade 
-        Católica de Goiás (PUC Goiás) foi criada em agosto de 2021 
-        com a junção de três escolas: Escola de Artes e Arquitetura, 
-        Escola de Ciências Exatas e da Computação e Escola de 
-        Engenharia. Atualmente são oferecidos 18 cursos de graduação, 
+        A Escola Politécnica e de Artes da Pontifícia Universidade Católica de 
+        Goiás (PUC Goiás) foi criada em agosto de 2021 com a junção de três escolas: 
+        Escola de Artes e Arquitetura, Escola de Ciências Exatas e da Computação e 
+        Escola de Engenharia. Atualmente são oferecidos 18 cursos de graduação, 
+
         sendo 11 presenciais, 5 semipresenciais e 2 ensino à distância.
 
         <div class="list-container">
@@ -197,19 +197,25 @@
 
 <script lang="ts">
 
-import PhotoHeader from '@/components/organization/PhotoHeader.vue'
-import Main from '@/components/organization/Main.vue'
-import Paragraph from '@/components/organization/Paragraph.vue'
+
+  
+  import PhotoHeader from '@/components/organization/PhotoHeader.vue'
+  import Main from '@/components/organization/Main.vue'
+  import Paragraph from '@/components/organization/Paragraph.vue'
+  
 
 
   export default {
-
-    components: {
+    components : {
       PhotoHeader,
       Main,
       Paragraph
-    }
+    }  
+  
   }
+
+
+
 
 </script>
 
@@ -261,6 +267,10 @@ import Paragraph from '@/components/organization/Paragraph.vue'
   width: 25rem;
 
   transition: transform 0.4s;
+}
+
+.list-cursos {
+  list-style-type: none;
 }
 
 .list-cursos li:hover {
