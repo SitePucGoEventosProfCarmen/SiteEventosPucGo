@@ -16,7 +16,7 @@
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
 
         <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
-        <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" download="download">
+        <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" target="_blank">
           <button class="button">Download Edital</button>
         </a>
 
