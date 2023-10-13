@@ -70,7 +70,7 @@
               <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>ANDRÉ LUIZ ALVEZ</h4>
-                <p>Engenharia de software</p>
+                <p>Engenharia de Dados</p>
               </div>
             </div>
 
