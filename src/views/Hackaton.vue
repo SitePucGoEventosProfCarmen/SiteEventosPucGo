@@ -177,7 +177,7 @@
               <img src="/assets/img/speakers/anibal_santos_jukemura.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>Anibal Santos Jukemura</h4>
-                <p></p>
+                <p>Usabilidade e Front End</p>
               </div>
             </div>
 
@@ -211,7 +211,7 @@
               <img src="/assets/img/speakers/fernando_goncalves_abadia.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>Fernando Gonçalves Abadia</h4>
-                <p></p>
+                <p>programação/gameficação</p>
               </div>
             </div>
 
