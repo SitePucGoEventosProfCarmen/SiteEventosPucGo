@@ -348,7 +348,7 @@
 
         <div class="avaliador">
             <div class="pessoa-informacao">
-              <img src="/assets/img/speakers/user-vector-woman.jpg" alt="foto avaliador" />
+              <img src="/assets/img/speakers/mirian_sandra_rosa_gusmao.jpg" alt="foto avaliador" />
               <div class="nome-e-descricao">
                 <h4>Mirian Sandra Rosa Gusmão</h4>
                 <p>Diretora da Escola Politécnica e de Artes</p>
@@ -372,7 +372,7 @@
 
         <div class="avaliador">
             <div class="pessoa-informacao">
-              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto avaliador" />
+              <img src="/assets/img/speakers/carbio_almeida_waqued.jpg" alt="foto avaliador" />
               <div class="nome-e-descricao">
                 <h4>Carbio Almeida Waqued</h4>
                 <p>Incubadora PUC Goiás</p>
