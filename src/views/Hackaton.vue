@@ -14,12 +14,19 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
 
-        <a href="../../public/assets/EDITAL DE CHAMADA DO HACKA PUC 2023.pdf" download="download">
-          <button class="button">Edital</button>
-        </a>    
+        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
+        <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" download="download">
+          <button class="button">Download Edital</button>
+        </a>
+
+       
+
+
+
       </div>
+
+      
 
       <div class="courses-list" id="cursos" v-if="visibleCursos">
         <div v-for="(props, index) in coursesList" :key="index">
@@ -402,9 +409,9 @@
         <br/>
         <br/>
         <br/> 
-        <h3 style="text-align: left;">Campanha de Arrecadação</h3>
+        <h3 style="text-align: justify;">Campanha de Arrecadação</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
+        <p style="text-align: justify; font-size: 18px;">
           Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
           não perecíveis ou itens de higiene pessoal e ganhe um botton do HackaPuc 
           como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
@@ -416,9 +423,9 @@
         <br/>
         <br/>
         <br/>     
-        <h3 style="text-align: left;">Inscrições</h3>
+        <h3 style="text-align: justify;">Inscrições</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
+        <p style="text-align: justify; font-size: 18px;">
           As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
           abertura da Hackapuc. Os interessados devem formar grupos 
           e efetuar as incrições por meio de um formulário que será 
@@ -429,9 +436,9 @@
         <br/>
         <br/>
         <br/>      
-        <h3 style="text-align: left;">Como Funciona</h3>
+        <h3 style="text-align: justify;">Como Funciona</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="text-align: left; font-size: 18px;">
+        <p style="text-align: justify; font-size: 18px;">
           A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
           do desafio será revelado. As equipes devem trabalhar para 
           poderem cumprir os checkpoints. Cada checkpoint representa 
@@ -466,6 +473,7 @@
   import { Component, Vue, Prop } from 'vue-property-decorator'
   
 
+
   @Component({
   components: {
     PhotoHeader,
@@ -473,7 +481,7 @@
     MiniCourse,
     Paragraph,    
     Programacao
-  }
+  },
 })
 export default class MiniCourses extends Vue {  
 
@@ -495,6 +503,12 @@ export default class MiniCourses extends Vue {
   constructor() {
     super();
 
+  }
+
+  data () {
+    return {
+    publicPath: process.env.BASE_URL
+    }
   }
 
   mostrar_apenas_geral() {
