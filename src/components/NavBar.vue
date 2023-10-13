@@ -10,8 +10,6 @@
         </dir>
       </div>
       <ul>
-        <!--<router-link to="/" tag="li">Home</router-link>
-        <router-link to="/escola" tag="li">Escola</router-link> -->
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackaton" tag="li">Hackathon</router-link>
         <router-link to="/manutencao" tag="li">Desafios</router-link>
@@ -22,10 +20,11 @@
     <div class="nav-info">
       <div id="logo-nav-bar">
         <a href="/">
-          <img id="logo" src="assets/img/logopuc.png" 
+          <img id="logo" src="assets/img/Poli_azul.png" 
             style="                   
                   position: absolute; 
-                  float: right; 
+                  float: right;
+                  width: 250px; 
                   top: -20px;"
           >          
         </a>
@@ -36,17 +35,7 @@
           
         </span>
       </div>
-<!--
-      <div class="nav-date">
-        <span class="desktop" :style="{ textAlign: 'right' }">
-          <br />Escola de Ciencias Exatas e de Artes <br />PUC GO
-        </span>
 
-        <span id="span-data-mobile" class="mobile sm-device">          
-          Escola de Ciencias Exatas e de Artes
-        </span>
-      </div>
--->
       <div id="barra-mobile" class="mobile">
         <label for="open-mmenu">
           <i class="fas fa-bars"></i>
@@ -55,8 +44,6 @@
     </div>
     <div class="nav-container desktop">
       <ul>
-        <!--<router-link to="/" tag="li">Home</router-link>
-        <router-link to="/escola" tag="li">Escola</router-link> -->
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackaton" tag="li">Hackathon</router-link>
         <router-link to="/manutencao" tag="li">Desafio CD</router-link>
