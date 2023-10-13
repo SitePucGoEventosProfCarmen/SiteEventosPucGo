@@ -329,7 +329,6 @@
         </div>
 
 
-        <hr>
 
       </div>
       
@@ -357,8 +356,29 @@
             </div>            
         </div>
 
+        <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/matheus_dias_ferlin_moura.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Matheus Dias Ferlin Moura</h4>
+                <p>Desenvolvedor da LG</p>
+              </div>
+            </div>            
+        </div>
 
         <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Carbio Almeida Waqued</h4>
+                <p>Incubadora PUC Goiás</p>
+              </div>
+            </div>            
+        </div>
 
       </div>
 
@@ -895,6 +915,9 @@ h4 {
 
 }
 
+div {
+  border: 1px solid red;
+}
 
 </style>
 
