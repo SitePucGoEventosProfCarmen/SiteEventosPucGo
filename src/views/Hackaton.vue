@@ -15,8 +15,11 @@
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
         <button class="button" v-on:click="">Avaliadores</button>
-        <!--<button class="button" v-on:click="filterCourses">12/05</button>
-        <button class="button" v-on:click="filterCourses">13/05</button>-->
+
+        <a href="../../public/assets/EDITAL DE CHAMADA DO HACKA PUC 2023.pdf" download="download">
+          <button class="button">Edital</button>
+        </a>
+
       </div>
       <div class="courses-list" id="cursos" >
         <div v-for="(props, index) in coursesList" :key="index" v-if="flag">
@@ -43,6 +46,20 @@
         o desenvolvimento de uma solução inovadora para um determinado 
         problema ou desafio. Os interessados devem formar grupos para 
         participarem.
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h3 style="text-align: left;">Campanha de Arrecadação</h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: left; font-size: 18px;">
+        Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
+        não perecíveis ou itens de higiene pessoal e ganhe um botton do HackaPuc 
+        como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
+        abertura e no dia 19/10/2023 durante o encerramento no auditório 3 da área 2. 
+        Contamos com sua ajuda!!!!
       </p>
       <br/>
       <br/>
