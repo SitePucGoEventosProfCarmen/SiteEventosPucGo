@@ -92,7 +92,7 @@ let Courses = [
     //link: ""
   },
   {
-    title: "Evoluin na TI: Enxergando além dos computadores",
+    title: "Evoluindo na TI: Enxergando além dos computadores",
     instructor: 'Iuri Cesar Caliman',
     institution: 'PUC Goiás',
     desc: ``,
