@@ -14,10 +14,16 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-        <button class="button" v-on:click="">Avaliadores</button>    
+
+        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
         <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" download="download">
           <button class="button">Download Edital</button>
         </a>
+
+       
+
+
+
       </div>
 
       
@@ -36,12 +42,13 @@
         <h2>MENTORES</h2>
         <br>
         <br>
+
         <div class="mentor">          
             <div class="pessoa-informacao">
               <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>GERALDO VALERIANO RIBEIRO</h4>
-                <p>Engenharia Software</p>
+                <p>Engenharia de Dados</p>
               </div>
             </div>
 
@@ -65,13 +72,15 @@
             
             </div>
         </div>
+
         <hr>
+
         <div class="mentor">
             <div class="pessoa-informacao">
               <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>ANDRÉ LUIZ ALVEZ</h4>
-                <p>Engenharia de Dados</p>
+                <p>Engenharia de Software</p>
               </div>
             </div>
 
@@ -92,16 +101,297 @@
 
               <div class="item local">
                 <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Teams ou incubadora</p></div>
+              </div>
+            </div>
+        </div>
+                
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Fabricio Schlag</h4>
+                <p>Engenharia de Software</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 11:00</p></div>
+                  <div><p>09:00 - 11:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Teams ou incubadora</p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/angelica_da_silva_nunes.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Angelica da Silva Nunes</h4>
+                <p>Marketing</p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>                  
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 11:00</p></div>                  
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
                 <div><p>Online: Teams</p></div>
               </div>
             </div>
         </div>
+
         <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/anibal_santos_jukemura.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Anibal Santos Jukemura</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>18:45 - 22:00</p></div>
+                  <div><p>18:45 - 22:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Online: Teams</p></div>
+              </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Daniel Correa da Silva</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p></p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/fernando_goncalves_abadia.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Fernando Gonçalves Abadia</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>09:00 - 12:15</p></div>
+                  <div><p>09:00 - 12:15</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Teams ou incubadora</p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Max Gontijo de Oliveira</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p></p></div>
+                  <div><p></p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p></p></div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mentor">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/lucilia_gomes_ribeiro.jpg" alt="foto mentor" />
+              <div class="nome-e-descricao">
+                <h4>Lucilia Gomes Ribeiro</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="conteiner-icones">
+              <div class="data-hora">
+                <div class="item">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                  <div><p>18/10</p></div>
+                  <div><p>19/10</p></div>
+                </div>
+
+                <div class="item">
+                  <i class="far fa-clock fa-3x"></i>
+                  <div><p>14:00 - 17:00</p></div>
+                  <div><p>14:00 - 17:00</p></div>
+                </div>
+              </div>
+
+              <div class="item local">
+                <i class="fas fa-map-marker-alt fa-3x"></i>
+                <div><p>Online: Teams</p></div>
+              </div>
+            </div>
+        </div>
+
+
+
       </div>
       
+
+      <!--
+        ===================================================
+        ===================================================
+              FIM DE MENTORES E COMEÇO DE AVALIADORES 
+        ===================================================
+        ===================================================
+      -->
+
+      <div id="avaliadores" v-if="visibleAvaliadores">
+        <h2>AVALIADORES</h2>
+        <br>
+        <br>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/mirian_sandra_rosa_gusmao.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Mirian Sandra Rosa Gusmão</h4>
+                <p>Diretora da Escola Politécnica e de Artes</p>
+              </div>
+            </div>            
+        </div>
+
+        <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/matheus_dias_ferlin_moura.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Matheus Dias Ferlin Moura</h4>
+                <p>Desenvolvedor da LG</p>
+              </div>
+            </div>            
+        </div>
+
+        <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/carbio_almeida_waqued.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Carbio Almeida Waqued</h4>
+                <p>Incubadora PUC Goiás</p>
+              </div>
+            </div>            
+        </div>
+
+      </div>
+
+
+
     </Main>    
-
-
 
 
     <div id="geral" v-if="visibleGeral">
@@ -203,6 +493,7 @@ export default class MiniCourses extends Vue {
   private visibleMentores = false;
   private visibleCursos = false;
   private visibleGeral = true;
+  private visibleAvaliadores = false;
   private filtered_courses = {};
   private coursesList = miniCourses_Section;
   private title = "";
@@ -221,11 +512,11 @@ export default class MiniCourses extends Vue {
   }
 
   mostrar_apenas_geral() {
-
-  this.visibleCheckpoint  = false;
-  this.visibleMentores    = false;
-  this.visibleCursos      = false;
-  this.visibleGeral       = true;
+    this.visibleCheckpoint  = false;
+    this.visibleMentores    = false;
+    this.visibleCursos      = false;
+    this.visibleGeral       = true;
+    this.visibleAvaliadores = false;
 
   const func = () => {
     const geral = document.getElementById("geral");
@@ -242,6 +533,7 @@ export default class MiniCourses extends Vue {
     this.visibleCursos      = false;
     this.visibleGeral       = false;
     this.visibleCheckpoint  = true;
+    this.visibleAvaliadores = false;
 
     const func = () =>{
       const checkpoint = document.getElementById("checkpoint");
@@ -277,7 +569,8 @@ export default class MiniCourses extends Vue {
     this.visibleCheckpoint  = false;
     this.visibleMentores    = false;      
     this.visibleGeral       = false;
-    this.visibleCursos      = true;      
+    this.visibleCursos      = true;
+    this.visibleAvaliadores = false;
   }
 
   mostrar_apenas_mentores() {
@@ -286,10 +579,27 @@ export default class MiniCourses extends Vue {
     this.visibleCursos      = false;
     this.visibleGeral       = false;
     this.visibleMentores    = true;
+    this.visibleAvaliadores = false;
 
     const func = () => {
       const mentores = document.getElementById("mentores");
       mentores.scrollIntoView({behavior: "smooth"})
+    }
+
+    setTimeout(func, 100);
+
+  }
+
+  mostrar_apenas_avaliadores() {
+    this.visibleCheckpoint  = false;      
+    this.visibleCursos      = false;
+    this.visibleGeral       = false;
+    this.visibleMentores    = false;
+    this.visibleAvaliadores = true;
+
+    const func = () => {
+      const avaliadores = document.getElementById("avaliadores");
+      avaliadores.scrollIntoView({behavior: "smooth"})
     }
 
     setTimeout(func, 100);
@@ -384,7 +694,7 @@ h4 {
 }
 
 
-#mentores {
+#mentores #avaliadores{
   
   margin-top: 0px;
   bottom: 0px;
@@ -392,7 +702,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-#mentores hr {
+#mentores hr, #avaliadores hr {
   border: 1px solid #000;
 }
 
@@ -451,7 +761,7 @@ h4 {
     margin-bottom: -100px;
   }
 
-  #mentores {
+  #mentores, #avaliadores{
     bottom: 50px;
   }
   
@@ -460,7 +770,7 @@ h4 {
 @media screen and (max-width: 471px) {
 
 
-  #mentores {
+  #mentores, #avaliadores{
     bottom: -30px;
   }
   
@@ -475,7 +785,7 @@ h4 {
     padding-top: 0px;
   }
 
-  #mentores {
+  #mentores, #avaliadores {
     margin-top: 200px;
   }
 
@@ -486,7 +796,7 @@ h4 {
 
 @media screen and (max-width: 331px) {  
 
-  #mentores {
+  #mentores, #avaliadores {
     margin-top: 300px;
 
   }
@@ -507,13 +817,13 @@ h4 {
 
 
 */
-#mentores img {
+#mentores img, #avaliadores img {
     width: 150px;
     height: 150px;
     border-radius: 100%;    
 }
 
-.mentor {
+.mentor, .avalidador {
     display: flex;
     margin: 10px;
     justify-content: space-between;
@@ -562,13 +872,13 @@ h4 {
 
 @media screen and (max-width: 1100px) {
 
-  #mentores {
+  #mentores, #avaliadores {
       display: flex;
       margin: 10px;
       flex-direction: column;        
   }
 
-  .mentor {
+  .mentor, .avaliador {
     display: flex;
     flex-direction: column;
   }
@@ -603,7 +913,7 @@ h4 {
 
 @media screen and (max-width: 576px) {
 
-  #mentores h2 {
+  #mentores h2, #avaliadores h2 {
     text-align: center;
   }
 
