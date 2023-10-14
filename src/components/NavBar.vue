@@ -296,11 +296,12 @@ export default class NavBar extends Vue {
   right: -100%;
   bottom: 0;
   box-shadow: -2px -2px 16px;
-  transition: right 800ms ease-in-out;
+  transition: right 800ms ease-in-out;  
 }
 .menu-mobile ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 .menu-mobile ul li {
   padding: 15px;
