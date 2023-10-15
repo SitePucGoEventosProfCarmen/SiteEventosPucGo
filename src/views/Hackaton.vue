@@ -14,13 +14,8 @@
         <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
         <button class="button" v-on:click="filterCourses">Minicursos</button>
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
-
-        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>
-        <a :href="`${publicPath}EDITAL HACKA PUC 2023.pdf`" target="_blank">
-          <button class="button">Edital</button>
-        </a>
-
-       
+        <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>        
+        <button class="button" v-on:click="abrir_edital">Edital</button>
 
 
 
@@ -492,7 +487,14 @@ export default class MiniCourses extends Vue {
   }
 
   setTimeout(func, 100);
-  }  
+  }
+
+  abrir_edital() {
+    const caminho = process.env.BASE_URL;
+    const caminhoPdf = `${caminho}EDITAL HACKA PUC 2023.pdf`;
+    window.open(caminhoPdf, '_blank');
+
+  }
 
 
   mostrar_apenas_checkpoint() {
@@ -585,6 +587,19 @@ export default class MiniCourses extends Vue {
   margin-top: 35px;
 }
 
+button {
+  display: block;
+}
+
+.button-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .section-course {
   font-weight: 700;
   font-size: 2rem;
@@ -616,6 +631,11 @@ export default class MiniCourses extends Vue {
   transition: all 0.2s ease-in-out;
 }
 
+.button-container a:focus {
+  
+  outline: none;  
+}
+
 .button:hover {
   background-color: #20407d;
   transform: background-color;
@@ -628,13 +648,15 @@ export default class MiniCourses extends Vue {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .button-container {
     flex-direction: column;
   }
   .button {
     margin-bottom: 1rem;
   }
+
+ 
 
   #checkpoint {
     bottom: 2600px;
@@ -715,9 +737,6 @@ h4 {
   color: #2776f5;
 }
 
-@media screen and (max-width: 576px) {
-
-}
 
 @media screen and (max-width: 532px) {
 
@@ -879,7 +898,7 @@ h4 {
     
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
 
   #mentores h2, #avaliadores h2 {
     text-align: center;
