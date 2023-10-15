@@ -25,6 +25,9 @@
       </a>
     </div>
     
+    <div id="espacador">
+      
+    </div>
 
     <div class="titulo-e-nav">      
       <p>Pontifícia Universidade Católica de Goiás</p>
@@ -63,10 +66,30 @@ export default class NavBar extends Vue {
   }
 
   created() {
-    this.$router.beforeEach(this.closeMenuOnRouteChange)
+    this.$router.beforeEach(this.closeMenuOnRouteChange)    
   }
 
+  mounted() {    
+    window.addEventListener("resize", this.centralizar);
+    setTimeout(this.centralizar, 300);
+  }
 
+  centralizar () {
+    
+    const logo    = document.getElementsByClassName('logo')[0];        
+    const navBar  = document.getElementsByClassName('titulo-e-nav')[0];
+
+    const largura_body    = window.innerWidth;
+    const margin_logo     = parseInt(window.getComputedStyle(logo).marginRight);
+    const largura_logo    = parseInt(window.getComputedStyle(logo).width);
+    const largura_navBar  = parseInt(window.getComputedStyle(navBar).width);
+        
+    let largura_espacador = Math.floor((largura_body - largura_navBar) / 2);
+    largura_espacador    -= largura_logo + margin_logo;
+
+    const espacador       = document.getElementById('espacador');
+    espacador.style.width = largura_espacador + "px";                
+  }
 
 
 
@@ -74,7 +97,6 @@ export default class NavBar extends Vue {
 </script>
 
 <style scoped>
-
 
 
 
