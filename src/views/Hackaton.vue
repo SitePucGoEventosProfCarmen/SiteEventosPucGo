@@ -650,10 +650,11 @@ button {
 
 @media screen and (max-width: 720px) {
   .button-container {
-    flex-direction: column;
+    flex-direction: column;        
   }
   .button {
     margin-bottom: 1rem;
+    margin-left: 2rem;
   }
 
  
