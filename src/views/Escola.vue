@@ -7,15 +7,18 @@
     ></PhotoHeader>
 
     <Main>
+
       <Paragraph title="Cursos">
         A Escola Politécnica e de Artes da Pontifícia Universidade Católica de 
         Goiás (PUC Goiás) foi criada em agosto de 2021 com a junção de três escolas: 
         Escola de Artes e Arquitetura, Escola de Ciências Exatas e da Computação e 
         Escola de Engenharia. Atualmente são oferecidos 18 cursos de graduação, 
         sendo 11 presenciais, 5 semipresenciais e 2 ensino à distância.
+      </Paragraph>
 
-        <div class="list-container">
-          <ul class="list-cursos">
+      <div class="list-container">
+          
+        <ul class="list-cursos">
             <h5>Presenciais</h5>
             <a
               href="https://www.pucgoias.edu.br/cursos/graduacao/agronomia/"
@@ -105,7 +108,8 @@
                 Engenharia de Produção
               </li>
             </a>
-          </ul>
+        </ul>
+
           <ul class="list-cursos">
             <h5>SemiPresenciais</h5>
             <a
@@ -150,6 +154,7 @@
               </li>
             </a>
           </ul>
+          
           <ul class="list-cursos">
             <h5>Ensino à Distância</h5>
             <a
@@ -169,36 +174,26 @@
               </li>
             </a>
           </ul>
-        </div>
-        <br/>
-        <br/>
-        <br/>
+      </div>
+
+      <p class="texto-final">
         Além de oferecer os seus próprios cursos, a Escola Politécnica e de Artes também é
         responsável pela área de Física, Matemática e Química com a criação do
         Núcleo de Pesquisa, Ensino e Extensão de Ciências Exatas. Escola Politécnica e de Artes 
         oferece o programa de pós-graduação intitulado Mestrado de
         Engenharia de Produção e Sistemas(
-        <a
-          id="mepros"
-          href="https://sites.pucgoias.edu.br/pos-graduacao/mestrado-engenharia-producao-sistemas/"
-          target="_target"
-          >MEPROS</a
-        >
-        ), criado em 2009. Atualmente oferece vários cursos de especializações e
-        extensão.
-        <br />
-
-      </Paragraph>
+          <a
+            id="mepros"
+            href="https://sites.pucgoias.edu.br/pos-graduacao/mestrado-engenharia-producao-sistemas/"
+            target="_target"
+            >MEPROS</a
+          >
+          ), criado em 2009. Atualmente oferece vários cursos de especializações e
+          extensão.
+          <br />
+      </p>
+    
     </Main>
-
-    <!--<Organization />
-    <Main>
-      <Paragraph title="palestrantes">
-        <Speakers :speakers="speakers" :paginate="1" />
-      </Paragraph>
-
-      <Supporters />
-    </Main>-->
   </div>
 </template>
 
@@ -242,13 +237,24 @@
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+.texto-final {
+  margin-top: 10rem;
+}
+
+
+@media screen and (min-width: 1125px) {
   .list-container {
     max-height: 50vh;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1125px) {
+  .texto-final {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 758px) {
   .list-container {
     max-height: 200vh;
     margin-right: 2rem;
