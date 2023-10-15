@@ -389,7 +389,7 @@
         <h3 style="text-align: justify;">Inscrições</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
         <p style="text-align: justify; font-size: 18px;">
-          As incrições podem ser feitas gratuitamente no dia 17/09 às 18:30, na 
+          As incrições podem ser feitas gratuitamente no dia 17/10 às 18:30, na 
           abertura da Hackapuc. Os interessados devem formar grupos 
           e efetuar as incrições por meio de um formulário que será 
           disponibilizado.
