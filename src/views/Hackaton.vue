@@ -372,7 +372,7 @@
         <br/>
         <br/>
         <br/> 
-        <h3 style="text-align: justify;">Campanha de Arrecadação</h3>
+        <h3 style="text-align: left;">Campanha de Arrecadação</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
         <p style="text-align: justify; font-size: 18px;">
           Nesta edição do Hackathon ajudaremos nossos irmãos e irmãs. Doe alimentos 
