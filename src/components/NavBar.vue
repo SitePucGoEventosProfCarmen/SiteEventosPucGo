@@ -1,7 +1,9 @@
 <template>
-  <div class="navbar-h mx-auto">
+  <div class="navbar-h">
+
     <input type="checkbox" id="open-mmenu" :style="{ display: 'none' }" />
-    <div class="mobile menu-mobile">
+
+    <div class="mobile menu-mobile"> <!-- barra lateral -->
       <div>
         <dir>
           <label for="open-mmenu">
@@ -17,39 +19,31 @@
       </ul>
     </div>
 
-    <div class="nav-info">
-      <div id="logo-nav-bar">
-        <a href="/">
-          <img id="logo" src="assets/img/Poli_azul.png" 
-            style="                   
-                  position: absolute; 
-                  float: right;
-                  width: 250px; 
-                  top: -20px;"
-          >          
-        </a>
-
-        <span class="title">Pontifícia Universidade Católica de Goiás</span>
-        <br />
-        <span>
-          
-        </span>
-      </div>
-
-      <div id="barra-mobile" class="mobile">
-        <label for="open-mmenu">
-          <i class="fas fa-bars"></i>
-        </label>
-      </div>
+    <div class="logo">
+      <a href="/">
+        <img src="assets/img/Poli_azul.png" alt="logo da puc">
+      </a>
     </div>
-    <div class="nav-container desktop">
+    
+
+    <div class="titulo-e-nav">      
+      <p>Pontifícia Universidade Católica de Goiás</p>
+      <div class="nav-container desktop">
       <ul>
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackaton" tag="li">Hackathon</router-link>
         <router-link to="/manutencao" tag="li">Desafio CD</router-link>
         <router-link to="/manutencao" tag="li">TCC</router-link>        
       </ul>
+      </div>
     </div>
+
+    <div id="barra-mobile" class="mobile"> <!-- imagem do amburguer -->
+        <label for="open-mmenu">
+          <i class="fas fa-bars fa-3x"></i>
+        </label>
+    </div>
+
   </div>
 </template>
 
@@ -71,73 +65,41 @@ export default class NavBar extends Vue {
   created() {
     this.$router.beforeEach(this.closeMenuOnRouteChange)
   }
+
+
+
+
+
 }
 </script>
 
 <style scoped>
-#logo {
-  left: -6rem;
-  height: 5rem;
-  top: -0.5rem;
-  width: 180px; 
-  height: 110px;
-}
 
-#logo-nav-bar {
-  text-align: left;
-  right: 300px;
-  padding-left: 40px;
-  margin-left: 40px;  
-  margin-top: 15px;
-  
-}
+
+
 
 .navbar-h {
   position: relative;
   padding: 20px 0;
+  padding-left: 10px;
   background-color: white;
-  max-width: 1000px;  
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
 }
 
-.navbar-h .nav-info {
-  color: #576574;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+.titulo-e-nav p {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  
 }
-.navbar-h .nav-info img {
-  position: absolute;
-  height: 113px;
-  left: -80px;
+
+.logo {
+  margin-right: 1rem;
 }
-.navbar-h .nav-info .title {
-  text-align: right;
-  position: relative;
-  left: 340px;
-  font-size: 30px;
-}
-.navbar-h .nav-info > div {
-  position: relative;
-}
-.navbar-h .nav-info > div:nth-child(2) {
-  text-align: left;
-}
-.navbar-h .nav-info > div:last-child {
-  text-align: right;
-}
-.navbar-h .nav-info span,
-.navbar-h .nav-info p,
-.navbar-h .nav-info h1,
-.navbar-h .nav-info h2,
-.navbar-h .nav-info h3 {
-  color: inherit;
-}
-.navbar-h .nav-date {
-  font-style: italic;
-  font-size: smaller;
-  display: flex;
-  align-items: flex-end;
-}
+
+
+
 .navbar-h .nav-container {
   display: flex;
   justify-content: center;
@@ -179,67 +141,12 @@ export default class NavBar extends Vue {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1350px) {
-  #logo-nav-bar{
-    right: 220px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  #logo-nav-bar{
-    right: 150px;
-
-  }
-}
-
-@media screen and (max-width: 816px) {
- 
-
-  
-
-}
-
-
 
 @media screen and (max-width: 768px) {
   .navbar-h {
     position: unset;
-    padding: 10px 0;
-    margin: 0 15px;
-  }
-  .navbar-h .nav-info {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 'lg t1 mn' 'lg t2 mn';
-  }
-  .navbar-h .nav-info label {
-    margin: 0;
-  }
-  .navbar-h .nav-info img {
-    grid-area: lg;
-    position: unset;
-    left: unset;
-    height: 90px;
-    margin-right: 22px;
-  }
-  .navbar-h .nav-info > div {
-    grid-area: t1;
-  }
-  .navbar-h .nav-info > div:last-child {
-    grid-area: mn;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22pt;
-  }
-  .navbar-h .nav-info > div:last-child i {
-    margin: 15px;
-  }
-  .navbar-h .nav-info .nav-date {
-    grid-area: t2;
-  }
+    padding: 10px 0;    
+  }  
 
   #barra-mobile {
     left: 150px;
@@ -252,36 +159,26 @@ export default class NavBar extends Vue {
   }
 }
 
+@media screen and (max-width: 533px) {  
+  .titulo-e-nav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 455px) {
   #barra-mobile {
     left: 50px;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .navbar-h .nav-info > div:last-child i {
-    margin: 5px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .navbar-h .nav-info span {
-    font-size: 12px;
-    text-align: left;
-  }
 
+@media screen and (max-width: 375px) {
   #barra-mobile {
     left: 20px;
   }
 
 }
-@media screen and (max-width: 320px) {
-  .navbar-h {
-    margin: 0 5px;
-  }
-  .navbar-h .nav-info img {
-    margin-right: 10px;
-  }
-}
+
 
 #open-mmenu:checked + div {
   right: 0;
@@ -331,63 +228,74 @@ export default class NavBar extends Vue {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1140px) {
-  #logo-nav-bar{
-    right: 150px;
-    
-  }
-}
 
-
-
-@media screen and (max-width: 980px) {
-  .navbar-h {
-    left: 80px;
-  }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 926px) {
   .mobile {
     display: none !important;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 925px) {
   .desktop {
     display: none !important;
-  }  
+  }
+  .navbar-h {
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
 
-  #logo-nav-bar {
-    margin-bottom: 80px;
+  #barra-mobile {
+    display: flex;
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center;    
+  }
+
+
+}
+
+@media screen and (max-width: 356px) {
+
+  .logo {
+    margin-right: 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 341px) {
+
+
+  .logo, .logo img {
+    transform: scale(0.9, 0.9);
+  }
+
+  .logo {
+    margin-left: -1rem;
+  }
+
+  #barra-mobile {
+    margin-left: -8rem;
+  }
+  
+
+}
+
+@media screen and (max-width: 328px) {
+
+  .logo a {
+    right: 2rem;
+  }
+
+  #barra-mobile {
+    z-index: 1;
   }
 }
 
-@media screen and (max-width: 625px) {
-
-  #logo-nav-bar{
-    right: 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .lg-device {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 375px) {
-  .md-device {
-    display: none !important;
-  }
-}
 @media screen and (max-width: 320px) {
-  .sm-device {
-    display: none !important;
-  }
 
   #barra-mobile {
     left: 90px;
   }
-
-  
-
 }
+
 </style>
