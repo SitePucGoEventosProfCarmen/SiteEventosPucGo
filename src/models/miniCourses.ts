@@ -76,7 +76,7 @@ let Courses = [
     institution: 'PUC Goiás',
     desc: ``,
     date: '19/10',
-    time: '15:00',
+    time: '11:00',
     place: 'Microsoft Teams',
     link: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjdkOGY0MzQtNzkzNi00MzhkLWIxZWItMzQ4YThiNTM1OGZk%40thread.v2/0?context=%7b%22Tid%22%3a%2273319f42-8908-4b89-9f8d-558cf4d5d776%22%2c%22Oid%22%3a%2240bb2b05-1841-4e71-946d-794d726cf0cb%22%7d"
   },
