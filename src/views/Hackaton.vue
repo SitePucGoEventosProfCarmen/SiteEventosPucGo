@@ -358,9 +358,9 @@
 
 
     <div id="geral" v-if="visibleGeral">
-        <h2>Hackapuc 2023</h2>
+        <h2 style="text-align: left;">Hackapuc 2023</h2>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
-        <p style="font-size: 18px;">
+        <p style="text-align: justify; font-size: 18px;">
           Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
           de 17 a 19 de outubro. A abertura ocorrerá no dia 17/10 as 18:30 no auditorio 3 da Area 2,
           com encerramento e anuncio dos vencedores no dia 19/10 as 18:30 no mesmo local.
@@ -388,7 +388,7 @@
         <br/>
         <br/>
         <br/>     
-        <h3 style="text-align: justify;">Inscrições</h3>
+        <h3 style="text-align: left;">Inscrições</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
         <p style="text-align: justify; font-size: 18px;">
           As incrições podem ser feitas gratuitamente no dia 17/10 às 18:30, na 
@@ -401,7 +401,7 @@
         <br/>
         <br/>
         <br/>      
-        <h3 style="text-align: justify;">Como Funciona</h3>
+        <h3 style="text-align: left;">Como Funciona</h3>
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
         <p style="text-align: justify; font-size: 18px;">
           A abertura da Hackathon será no dia 17/10. Nesse dia, o tema 
