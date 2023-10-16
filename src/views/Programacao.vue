@@ -13,14 +13,15 @@
             <div style="margin: 20px auto;">
               <i :style="{gridArea: 'id'}" class="far fa-calendar-alt" title="Data" style="margin-right: 30px;"></i>
               <i :style="{gridArea: 'ip'}" class="far fa-clock" title="Hora" style="margin-left: 30px;"></i>
-              <p :style="{gridArea: 'd'}" style="margin-right: 30px;">{{ o.date }}</p>
-              <p :style="{gridArea: 'p'}" style="margin-left: 30px;"> {{ o.time }} </p>
+              <p :style="{gridArea: 'd'}" style="margin-right: 30px;" >{{ o.date }}</p>
+              <p :style="{gridArea: 'p'}" style="margin-left: 30px;"  >{{ o.time }}</p>
               <br>
               <br>
             </div>
             <div>
               <h4> {{ o.description }} </h4>
               <h6> {{ o.speaker }} </h6>
+              <a :href="o.link"> {{ o.place }} </a>
             </div>
           </div>
         </div>
@@ -73,6 +74,12 @@ export default class Programacao extends Vue {
         },
       ];
     }
+
+    getlink(o){
+      var a = document.getElementById( o.link ); 
+      a.href = o.link
+    }
+
 }
 </script>
 

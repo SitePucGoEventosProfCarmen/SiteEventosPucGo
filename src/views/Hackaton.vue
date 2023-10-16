@@ -495,7 +495,6 @@ export default class MiniCourses extends Vue {
     const caminho = process.env.BASE_URL;
     const caminhoPdf = `${caminho}EDITAL HACKA PUC 2023.pdf`;
     window.open(caminhoPdf, '_blank');
-
   }
 
 
