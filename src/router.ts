@@ -32,7 +32,7 @@ const router = new Router({
         import( "./views/MiniCourses.vue")
     },*/
     {
-      path: "/hackaton",
+      path: "/hackathon",
       name: "hackaton",
       component: () =>
         import(/* webpackChunkName: "hackaton" */"./views/Hackaton.vue")

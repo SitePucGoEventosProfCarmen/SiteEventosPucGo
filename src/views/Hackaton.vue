@@ -172,7 +172,7 @@
               <img src="/assets/img/speakers/anibal_santos_jukemura.jpg" alt="foto mentor" />
               <div class="nome-e-descricao">
                 <h4>Anibal Santos Jukemura</h4>
-                <p>Usabilidade e Front End</p>
+                <p>Usabilidade e Front End</p>
               </div>
             </div>
 
@@ -345,7 +345,7 @@
               <img src="/assets/img/speakers/carbio_almeida_waqued.jpg" alt="foto avaliador" />
               <div class="nome-e-descricao">
                 <h4>Carbio Almeida Waqued</h4>
-                <p>Incubadora PUC Goiás</p>
+                <p>Incubadora PUC Goiás</p>
               </div>
             </div>            
         </div>
@@ -362,7 +362,9 @@
         <hr style="border-top: 3px solid #333; margin: 20px auto;">
         <p style="font-size: 18px;">
           Temos a alegria de anunciar a Hackapuc 2023, que será realizada 
-          de 17 a 19 de outubro. A Hackapuc é um grande evento que envolve 
+          de 17 a 19 de outubro. A abertura ocorrerá no dia 17/10 as 18:30 no auditorio 3 da Area 2,
+          com encerramento e anuncio dos vencedores no dia 19/10 as 18:30 no mesmo local.
+          A Hackapuc é um grande evento que envolve 
           o desenvolvimento de uma solução inovadora para um determinado 
           problema ou desafio. Os interessados devem formar grupos para 
           participarem.
