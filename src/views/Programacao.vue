@@ -1,26 +1,32 @@
 <template>
-  <div class="programacao">
+  <div class="programacao">    
     <Main>
       <div v-for="(event, i) in events" :key="i">
+        
         <div class="title">
+          
           <Paragraph :title="event.title" style="text-align: center;"></Paragraph>
           <h5 v-if="event.description">
             <i> {{ event.description }} </i>
           </h5>
         </div>
-        <div class="list">
-          <div class="item" v-for="(o, i) in event.activities" :key="i">
+        <div class="list">          
+          <div class="item" v-for="(o, i) in event.activities" :key="i">            
             <div style="margin: 20px auto;">
-              <i :style="{gridArea: 'id'}" class="far fa-calendar-alt" title="Data" style="margin-right: 30px;"></i>
-              <i :style="{gridArea: 'ip'}" class="far fa-clock" title="Hora" style="margin-left: 30px;"></i>
-              <p :style="{gridArea: 'd'}" style="margin-right: 30px;">{{ o.date }}</p>
-              <p :style="{gridArea: 'p'}" style="margin-left: 30px;"> {{ o.time }} </p>
+              <p class="flutuante" :id="o.id">Classificados</p>
+              <i :style="{gridArea: 'id'}" class="far fa-calendar-alt" title="Data" style="margin-right: 0px;"></i>
+              <i :style="{gridArea: 'ip'}" class="far fa-clock" title="Hora" style="margin-left: 0px;"></i>
+              <a :style="{gridArea: 'ic'}" href="">
+                <img :src="o.status" class="icone" alt="" :id="'img-' + o.id">
+              </a>
+              <p :style="{gridArea: 'd'}" style="margin-right: 0px;">{{ o.date }}</p>
+              <p :style="{gridArea: 'p'}" style="margin-left: 0px;"> {{ o.time }} </p>              
               <br>
-              <br>
+              <br>                            
             </div>
             <div>
               <h4> {{ o.description }} </h4>
-              <h6> {{ o.speaker }} </h6>
+              <h6> {{ o.speaker }} </h6>              
             </div>
           </div>
         </div>
@@ -60,7 +66,9 @@ export default class Programacao extends Vue {
     private events: any;
 
     constructor(){
-      super();
+      super();      
+
+
       
       this.hackaton = require('@/storage/programacao/hackaton').default;
 
@@ -73,10 +81,49 @@ export default class Programacao extends Vue {
         },
       ];
     }
+
+
+    mounted() {
+      
+      const itens = this.hackaton;
+
+      for (const iterator of itens) {
+
+        const caixa_texto = document.getElementById(iterator.id);
+        const imagem = document.getElementById('img-' + iterator.id);
+
+        imagem.addEventListener('mouseenter', () => {
+          caixa_texto.style.visibility = 'visible';
+        });
+
+        imagem.addEventListener('mouseleave', () => {
+          caixa_texto.style.visibility = 'hidden';
+        })
+      }      
+    }
 }
 </script>
 
 <style scoped>
+
+.flutuante {    
+  background-color: #eee;
+  transform: translateX(50px) translateY(-50px);
+  width: 7rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid #333;    
+  visibility: hidden;
+}
+
+
+.icone {
+  width: 2rem;
+  height: 2rem;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
 .programacao .title {
   padding: 20px;
   background-color: whitesmoke;
@@ -87,9 +134,9 @@ export default class Programacao extends Vue {
 }
 .programacao .list .item {
   display: flex;
-  margin-top: 22px;
+  margin-top: 22px;  
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 900px) {
   .programacao .list .item {
     flex-direction: column-reverse;
   }
@@ -106,21 +153,23 @@ export default class Programacao extends Vue {
 .programacao .list .item > div:first-child {
   flex: 5;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "id ip" "d p" "it it" "t t";
+  grid-template-areas: "id ip ic" "d p c" "it vv x" "t t y";
   text-align: center;
   padding: 10px;
   background-color: whitesmoke;
   box-shadow: 0 .46875rem 2.1875rem rgba(0,0,0,.03),0 .9375rem 1.40625rem rgba(0,0,0,.03),0 .25rem .53125rem rgba(0,0,0,.05),0 .125rem .1875rem rgba(0,0,0,.03);;
+  height: 10rem;
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 900px) {
   .programacao .list .item > div:first-child {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "id ip it" "d p t";
+    grid-template-areas: "id ip ic" "d p c" "x y z";
     background-color: unset;
     box-shadow: unset;
+    width: 20rem;
   }
 }
 .programacao .list .item > div:first-child i {
@@ -144,7 +193,7 @@ export default class Programacao extends Vue {
   justify-content: center;
   margin-left: 20px;
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 900px) {
   .programacao .list .item > div:nth-child(2) {
     margin-left: unset;
     margin-bottom: 15px;
