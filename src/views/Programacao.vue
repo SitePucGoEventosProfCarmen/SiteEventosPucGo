@@ -21,12 +21,16 @@
               </a>
               <p :style="{gridArea: 'd'}" style="margin-right: 0px;">{{ o.date }}</p>
               <p :style="{gridArea: 'p'}" style="margin-left: 0px;"> {{ o.time }} </p>              
+
+
+
               <br>
               <br>                            
             </div>
             <div>
-              <h4> {{ o.description }} </h4>
-              <h6> {{ o.speaker }} </h6>              
+              <h4> {{ o.description }} </h4>                           
+              <h6> {{ o.speaker }} </h6>
+              <a :href="o.link"> {{ o.place }} </a>
             </div>
           </div>
         </div>
@@ -100,7 +104,9 @@ export default class Programacao extends Vue {
           caixa_texto.style.visibility = 'hidden';
         })
       }      
-    }
+    }    
+
+
 }
 </script>
 
