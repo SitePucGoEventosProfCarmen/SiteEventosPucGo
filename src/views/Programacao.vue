@@ -16,7 +16,7 @@
               <p class="flutuante" :id="o.id">Classificados</p>
               <i :style="{gridArea: 'id'}" class="far fa-calendar-alt" title="Data" style="margin-right: 0px;"></i>
               <i :style="{gridArea: 'ip'}" class="far fa-clock" title="Hora" style="margin-left: 0px;"></i>
-              <a :style="{gridArea: 'ic'}" href="">
+              <a :style="{gridArea: 'ic'}" :href="o.link_classificados" target="_blank">
                 <img :src="o.status" class="icone" alt="" :id="'img-' + o.id">
               </a>
               <p :style="{gridArea: 'd'}" style="margin-right: 0px;">{{ o.date }}</p>
