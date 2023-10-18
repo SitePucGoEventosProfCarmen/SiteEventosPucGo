@@ -348,6 +348,30 @@
             </div>            
         </div>
 
+        <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/ronisson_cabral.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Ronisson Cabral</h4>
+                <p>CTO na UNI</p>
+              </div>
+            </div>            
+        </div>
+
+        <hr>
+
+        <div class="avaliador">
+            <div class="pessoa-informacao">
+              <img src="/assets/img/speakers/felipe_issa_santiago.jpg" alt="foto avaliador" />
+              <div class="nome-e-descricao">
+                <h4>Felipe Issa Santiago</h4>
+                <p>Product Designer na Fitbank</p>
+              </div>
+            </div>            
+        </div>
+
       </div>
 
 
