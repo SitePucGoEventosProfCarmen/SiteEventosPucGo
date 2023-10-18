@@ -316,10 +316,10 @@
 
         <div class="avaliador">
             <div class="pessoa-informacao">
-              <img src="/assets/img/speakers/mirian_sandra_rosa_gusmao.jpg" alt="foto avaliador" />
+              <img src="/assets/img/speakers/leonardo_guerra.jpg" alt="foto avaliador" />
               <div class="nome-e-descricao">
-                <h4>Mirian Sandra Rosa Gusmão</h4>
-                <p>Diretora da Escola Politécnica e de Artes</p>
+                <h4>Leonardo Guerra</h4>
+                <p>Prof. Dr. da PUC Goiás</p>
               </div>
             </div>            
         </div>
