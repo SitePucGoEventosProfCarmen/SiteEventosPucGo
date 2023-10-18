@@ -15,10 +15,10 @@ export default [
     place: "Entrega",
     speaker: "Prazo final para entrega do formulário do projeto escrito",
     time: "13:00",
-    status: "/assets/img/icones/remove.ico",
+    status: "/assets/img/icones/check.ico",
     id: "item2",
     link: "https://forms.office.com/r/4E0SYQbwyr",
-    link_classificados: '',
+    link_classificados: 'ClassificadosCP2.pdf',
     },
 
 
