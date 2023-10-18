@@ -16,9 +16,7 @@
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
         <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>        
         <button class="button" v-on:click="abrir_edital">Edital</button>
-
-
-
+        <button class="button" v-on:click="baixar_desafio">Desafio</button>
       </div>
 
       
@@ -497,6 +495,12 @@ export default class MiniCourses extends Vue {
     window.open(caminhoPdf, '_blank');
   }
 
+  baixar_desafio() {
+    const caminho = process.env.BASE_URL;
+    const caminhoDocx = `${caminho}RACKATHON LG - Dia do Pobre.docx`;
+    window.open(caminhoDocx);
+  }
+
 
   mostrar_apenas_checkpoint() {
     
@@ -649,7 +653,7 @@ button {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .button-container {
     flex-direction: column;        
   }
@@ -674,7 +678,7 @@ button {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
   .button {
     width: 10.5rem;
   }
@@ -900,7 +904,7 @@ h4 {
     
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 
   #mentores h2, #avaliadores h2 {
     text-align: center;
