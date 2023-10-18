@@ -380,6 +380,8 @@
           como agradecimento. Coleta será realizada no dia 17/10/2023 durante a 
           abertura e no dia 19/10/2023 durante o encerramento no auditório 3 da área 2. 
           Contamos com sua ajuda!!!!
+          <br/>
+          No dia 19/10, após o encerramento, teremos sorteio de brindes aos doadores.
         </p>
         <br/>
         <br/>
