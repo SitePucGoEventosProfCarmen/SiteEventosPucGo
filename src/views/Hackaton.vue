@@ -16,7 +16,7 @@
         <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
         <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>        
         <button class="button" v-on:click="abrir_edital">Edital</button>
-        <button class="button" v-on:click="baixar_desafio">Desafio</button>
+        <button class="button" v-on:click="mostrar_apenas_desafio">Desafio</button>
       </div>
 
       
@@ -418,6 +418,106 @@
         <Programacao id="checkpoint-element"></Programacao>
     </div>
 
+    <div id="desafio" v-if="visibleDesafio">
+      <h2 style="text-align: left;">Tema proposto</h2>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: justify; font-size: 18px;">
+        <strong>Dia do Pobre</strong>. O uso da tecnologia para diminuir distâncias sociais.
+        <br>
+        <br>
+        <strong>Desafio</strong>: Como podemos utilizar a tecnologia e a inovação para criar 
+        soluções práticas que promovam a solidariedade, a justiça social e a atenção à 
+        desigualdade social?
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h3 style="text-align: left;">
+        Mensagem do Santo Padre Francisco Para o VII Dia Mundial Dos Pobres
+      </h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: justify; font-size: 18px;">
+        O Dia Mundial dos Pobres, sinal fecundo da misericórdia do Pai, vem pela 
+        sétima vez alentar o caminho das nossas comunidades. Trata-se duma ocorrência 
+        que se está a radicar progressivamente na pastoral da Igreja, fazendo-a 
+        descobrir cada vez mais o conteúdo central do Evangelho. Empenhamo-nos todos 
+        os dias no acolhimento dos pobres, mas não basta; a pobreza permeia as nossas 
+        cidades como um rio que engrossa sempre mais até extravasar; e parece 
+        submergir-nos, pois o grito dos irmãos e irmãs que pedem ajuda, apoio e 
+        solidariedade ergue-se cada vez mais forte. Por isso, no domingo que antecede a 
+        festa de Jesus Cristo, Rei do Universo, reunimo-nos ao redor da sua Mesa para 
+        voltar a receber d’Ele o dom e o compromisso de viver a pobreza e servir os pobres.
+        <strong>«Nunca afastes de algum pobre o teu olhar» (Tb 4, 7).</strong>
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h3 style="text-align: left;">
+        Contexto: Secretaria estima aumento de 108% dos moradores de rua em Goiânia.
+      </h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: justify; font-size: 18px;">
+        A Superintendência de Direitos Humanos da Secretaria de Estado de Desenvolvimento 
+        Social (Seds) estima que existam 2,5 mil moradores em situação de rua em Goiânia. 
+        Trata-se de um aumento de 108%, quando comparado ao número de 2019, antes da pandemia 
+        da Covid-19, quando censo realizado pelo Núcleo de Estudos e Pesquisas sobre Criminalidade 
+        e Violência (Necrivi), da Universidade Federal de Goiás (UFG), apontou 1,2 mil pessoas 
+        nessa condição. Em Goiás, seriam 4 mil, conforme a pasta.
+      </p>
+      <br>
+      <p style="text-align: justify; font-size: 18px;">
+        No País, de 2021 para 2022, o número de pessoas em situação de rua cresceu 50%. 
+        Eram 158,06 mil no primeiro ano e 236.400 mil no segundo. A informação é do 
+        relatório População em situação de rua, divulgado pelo Ministério dos Direitos 
+        Humanos e da Cidadania (MDHC).
+      </p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h3 style="text-align: left;">
+        Materiais de apoio:
+      </h3>
+      <hr style="border-top: 3px solid #333; margin: 20px auto;">
+      <p style="text-align: justify; font-size: 18px;">
+        <a href="https://www.vatican.va/content/francesco/pt/messages/poveri/documents/20230613-messaggio-vii-giornatamondiale-poveri-2023.html" 
+            target="_blank">
+          VII Dia Mundial dos Pobres, 2023: «Nunca afastes de algum pobre o teu olhar» (Tb 4, 7) | 
+          Francisco (vatican.va)
+        </a>
+        <br>
+        <br>
+
+        <a href="https://www.aves.org.br/jornada-mundial-dos-pobres-de-12-a-19-de-novembro/"
+          target="_blank">
+        Jornada Mundial dos Pobres de 12 a 19 de novembro - Arquidiocese de Vitória (aves.org.br)
+        </a>
+        <br>
+        <br>
+
+        <a href="https://ohoje.com/noticia/cidades/n/1534955/t/populacao-de-pessoas-em-situacao-de-rua-chega-a-4-mil-em-goias/"
+          target="_blank">
+          População de pessoas em situação de rua chega a 4 mil em Goiás (ohoje.com)
+        </a>
+        <br>
+        <br>
+
+        <a href="https://www.politize.com.br/pessoas-em-situacao-de-rua/"
+          target="_blank">
+          Pessoas em situação de rua: a complexidade da vida nas ruas | Politize!
+        </a>
+        <br>
+        <br>
+        
+      </p>
+
+    </div>
+
     
   </div>
 
@@ -457,6 +557,7 @@ export default class MiniCourses extends Vue {
   private visibleCursos = false;
   private visibleGeral = true;
   private visibleAvaliadores = false;
+  private visibleDesafio = false;
   private filtered_courses = {};
   private coursesList = miniCourses_Section;
   private title = "";
@@ -480,6 +581,7 @@ export default class MiniCourses extends Vue {
     this.visibleCursos      = false;
     this.visibleGeral       = true;
     this.visibleAvaliadores = false;
+    this.visibleDesafio = false;
 
   const func = () => {
     const geral = document.getElementById("geral");
@@ -495,11 +597,11 @@ export default class MiniCourses extends Vue {
     window.open(caminhoPdf, '_blank');
   }
 
-  baixar_desafio() {
+  /* baixar_desafio() {
     const caminho = process.env.BASE_URL;
     const caminhoDocx = `${caminho}RACKATHON LG - Dia do Pobre.docx`;
     window.open(caminhoDocx);
-  }
+  } */
 
 
   mostrar_apenas_checkpoint() {
@@ -509,6 +611,7 @@ export default class MiniCourses extends Vue {
     this.visibleGeral       = false;
     this.visibleCheckpoint  = true;
     this.visibleAvaliadores = false;
+    this.visibleDesafio     = false;
 
     const func = () =>{
       const checkpoint = document.getElementById("checkpoint");
@@ -546,6 +649,7 @@ export default class MiniCourses extends Vue {
     this.visibleGeral       = false;
     this.visibleCursos      = true;
     this.visibleAvaliadores = false;
+    this.visibleDesafio     = false;
   }
 
   mostrar_apenas_mentores() {
@@ -555,6 +659,7 @@ export default class MiniCourses extends Vue {
     this.visibleGeral       = false;
     this.visibleMentores    = true;
     this.visibleAvaliadores = false;
+    this.visibleDesafio     = false;
 
     const func = () => {
       const mentores = document.getElementById("mentores");
@@ -571,6 +676,7 @@ export default class MiniCourses extends Vue {
     this.visibleGeral       = false;
     this.visibleMentores    = false;
     this.visibleAvaliadores = true;
+    this.visibleDesafio     = false;
 
     const func = () => {
       const avaliadores = document.getElementById("avaliadores");
@@ -579,6 +685,23 @@ export default class MiniCourses extends Vue {
 
     setTimeout(func, 100);
 
+  }
+
+  mostrar_apenas_desafio() {
+    this.visibleMentores    = false;
+    this.visibleCursos      = false;
+    this.visibleGeral       = false;
+    this.visibleCheckpoint  = false;
+    this.visibleAvaliadores = false;
+    this.visibleDesafio     = true;
+
+    const func = () =>{
+      const desafio = document.getElementById("desafio");
+      desafio.scrollIntoView({behavior: 'smooth'})
+    }
+    
+
+    setTimeout(func, 100);
   }
 
 }
@@ -730,7 +853,7 @@ h4 {
   margin-top: 0px;
 }
 
-#geral {
+#geral, #desafio {
   position: relative;
   margin-bottom: 0px;
   visibility: visible;
@@ -739,7 +862,7 @@ h4 {
   margin: 20px auto;
 }
 
-#geral h2, h3, h4 {
+#geral h2, #desafio h2, h3, h4 {
   color: #2776f5;
 }
 
