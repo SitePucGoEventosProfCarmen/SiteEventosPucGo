@@ -10,10 +10,8 @@
       <Main id="root">
         <h4 class="text-center"></h4>      
         <div class="button-container">
-          <button class="button" v-on:click="mostrar_apenas_geral">Geral</button>
-          <button class="button" v-on:click="mostrar_apenas_checkpoint">Checkpoints</button>
-          <button class="button" v-on:click="filterCourses">Minicursos</button>
-          <button class="button" v-on:click="mostrar_apenas_mentores">Mentores</button>
+          <button class="button" v-on:click="mostrar_apenas_geral">Geral</button>          
+          <button class="button" v-on:click="filterCourses">Minicursos</button>          
           <button class="button" v-on:click="mostrar_apenas_avaliadores">Avaliadores</button>        
           <button class="button" v-on:click="abrir_edital">Edital</button>
           <button class="button" v-on:click="mostrar_apenas_desafio">Desafio</button>
@@ -31,283 +29,10 @@
         </div>
   
         
-        <div id="mentores" v-if="visibleMentores">
-          <h2>MENTORES</h2>
-          <br>
-          <br>
-  
-          <div class="mentor">          
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/geraldo_valeriano_ribeiro.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>GERALDO VALERIANO RIBEIRO</h4>
-                  <p>Engenharia de Dados</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">              
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>19:00 - 22:00</p></div>
-                  </div>
-                </div>
-  
-                  <div class="item local">
-                    <i class="fas fa-map-marker-alt fa-3x"></i>
-                    <div><p>Online: Teams</p></div>
-                  </div>
-              
-              </div>
-          </div>
-  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/andre_luiz_alvez.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>ANDRÉ LUIZ ALVEZ</h4>
-                  <p>Engenharia de Software</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                    <div><p>19/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>09:00 - 11:00</p></div>
-                    <div><p>09:00 - 11:00</p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Teams ou incubadora</p></div>
-                </div>
-              </div>
-          </div>
-                  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/fabricio_schlag.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Fabricio Schlag</h4>
-                  <p>Engenharia de Software</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                    <div><p>19/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>09:00 - 11:00</p></div>
-                    <div><p>09:00 - 11:00</p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Teams ou incubadora</p></div>
-                </div>
-              </div>
-          </div>
-  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/angelica_da_silva_nunes.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Angelica da Silva Nunes</h4>
-                  <p>Marketing</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>                  
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>09:00 - 11:00</p></div>                  
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Online: Teams</p></div>
-                </div>
-              </div>
-          </div>
-  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/anibal_santos_jukemura.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Anibal Santos Jukemura</h4>
-                  <p>Usabilidade e Front End</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                    <div><p>19/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>18:45 - 22:00</p></div>
-                    <div><p>18:45 - 22:00</p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Online: Teams</p></div>
-                </div>
-              </div>
-          </div>
-          
-          <hr>
-          
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/fernando_goncalves_abadia.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Fernando Gonçalves Abadia</h4>
-                  <p>Programação e gameficação</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                    <div><p>19/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>09:00 - 12:15</p></div>
-                    <div><p>09:00 - 12:15</p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Teams ou incubadora</p></div>
-                </div>
-              </div>
-          </div>
-  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/user-vector-man.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Max Gontijo de Oliveira</h4>
-                  <p></p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p></p></div>
-                    <div><p></p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p></p></div>
-                    <div><p></p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p></p></div>
-                </div>
-              </div>
-          </div>
-  
-          <hr>
-  
-          <div class="mentor">
-              <div class="pessoa-informacao">
-                <img src="/assets/img/speakers/lucilia_gomes_ribeiro.jpg" alt="foto mentor" />
-                <div class="nome-e-descricao">
-                  <h4>Lucilia Gomes Ribeiro</h4>
-                  <p>Viabilidade e usabilidade</p>
-                </div>
-              </div>
-  
-              <div class="conteiner-icones">
-                <div class="data-hora">
-                  <div class="item">
-                    <i class="far fa-calendar-alt fa-3x"></i>
-                    <div><p>18/10</p></div>
-                    <div><p>19/10</p></div>
-                  </div>
-  
-                  <div class="item">
-                    <i class="far fa-clock fa-3x"></i>
-                    <div><p>14:00 - 17:00</p></div>
-                    <div><p>14:00 - 17:00</p></div>
-                  </div>
-                </div>
-  
-                <div class="item local">
-                  <i class="fas fa-map-marker-alt fa-3x"></i>
-                  <div><p>Online: Teams</p></div>
-                </div>
-              </div>
-          </div>
-  
-  
-  
-        </div>
+
         
   
-        <!--
-          ===================================================
-          ===================================================
-                FIM DE MENTORES E COMEÇO DE AVALIADORES 
-          ===================================================
-          ===================================================
-        -->
+
   
         <div id="avaliadores" v-if="visibleAvaliadores">
           <h2>AVALIADORES</h2>
@@ -438,11 +163,7 @@
             serão avaliados pela banca examinadora e publicados no site.     
           </p>
       </div>
-  
-      
-      <div id="checkpoint" v-if="visibleCheckpoint">
-          <Programacao id="checkpoint-element"></Programacao>
-      </div>
+              
   
       <div id="desafio" v-if="visibleDesafio">
         <h2 style="text-align: left;">Tema proposto</h2>
@@ -577,9 +298,7 @@
     //@Prop(String) private title: String = "";
     //@Prop(String) private description: String = "";
     //@Prop(String) private background: String = "assets/img/bannerhackthon.png";
-  
-    private visibleCheckpoint = false;
-    private visibleMentores = false;
+      
     private visibleCursos = false;
     private visibleGeral = true;
     private visibleAvaliadores = false;
@@ -601,9 +320,7 @@
       }
     }
   
-    mostrar_apenas_geral() {
-      this.visibleCheckpoint  = false;
-      this.visibleMentores    = false;
+    mostrar_apenas_geral() {      
       this.visibleCursos      = false;
       this.visibleGeral       = true;
       this.visibleAvaliadores = false;
@@ -621,31 +338,6 @@
       const caminho = process.env.BASE_URL;
       const caminhoPdf = `${caminho}EDITAL HACKA PUC 2023.pdf`;
       window.open(caminhoPdf, '_blank');
-    }
-  
-    /* baixar_desafio() {
-      const caminho = process.env.BASE_URL;
-      const caminhoDocx = `${caminho}RACKATHON LG - Dia do Pobre.docx`;
-      window.open(caminhoDocx);
-    } */
-  
-  
-    mostrar_apenas_checkpoint() {
-      
-      this.visibleMentores    = false;
-      this.visibleCursos      = false;
-      this.visibleGeral       = false;
-      this.visibleCheckpoint  = true;
-      this.visibleAvaliadores = false;
-      this.visibleDesafio     = false;
-  
-      const func = () =>{
-        const checkpoint = document.getElementById("checkpoint");
-        checkpoint.scrollIntoView({behavior: 'smooth'})
-      }
-      
-  
-      setTimeout(func, 100);
     }
   
     filterCourses() {      
@@ -669,38 +361,17 @@
   
     }
   
-    mostrar_apenas_lista_cursos() {
-      this.visibleCheckpoint  = false;
-      this.visibleMentores    = false;      
+    mostrar_apenas_lista_cursos() {      
       this.visibleGeral       = false;
       this.visibleCursos      = true;
       this.visibleAvaliadores = false;
       this.visibleDesafio     = false;
     }
   
-    mostrar_apenas_mentores() {
   
-      this.visibleCheckpoint  = false;      
+    mostrar_apenas_avaliadores() {      
       this.visibleCursos      = false;
       this.visibleGeral       = false;
-      this.visibleMentores    = true;
-      this.visibleAvaliadores = false;
-      this.visibleDesafio     = false;
-  
-      const func = () => {
-        const mentores = document.getElementById("mentores");
-        mentores.scrollIntoView({behavior: "smooth"})
-      }
-  
-      setTimeout(func, 100);
-  
-    }
-  
-    mostrar_apenas_avaliadores() {
-      this.visibleCheckpoint  = false;      
-      this.visibleCursos      = false;
-      this.visibleGeral       = false;
-      this.visibleMentores    = false;
       this.visibleAvaliadores = true;
       this.visibleDesafio     = false;
   
@@ -714,10 +385,8 @@
     }
   
     mostrar_apenas_desafio() {
-      this.visibleMentores    = false;
       this.visibleCursos      = false;
       this.visibleGeral       = false;
-      this.visibleCheckpoint  = false;
       this.visibleAvaliadores = false;
       this.visibleDesafio     = true;
   
