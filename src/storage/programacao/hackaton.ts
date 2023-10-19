@@ -27,10 +27,10 @@ export default [
     place: "Entrega",
     speaker: "Prazo final para a entrega do primeiro protótipo desenhado",
     time: "22:00",
-    status: "/assets/img/icones/remove.ico",
+    status: "/assets/img/icones/check.ico",
     id: "item3",
     link: "https://forms.office.com/r/LyX8Pt2gSC",
-    link_classificados: '',
+    link_classificados: 'CP3.pdf',
     },
 
     
