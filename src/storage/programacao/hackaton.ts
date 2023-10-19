@@ -48,7 +48,7 @@ export default [
 
     {date: "19/10",
     description: "Checkpoint 5",
-    place: "",
+    place: "Pitch deve ser apresentado para a banca em no maximo 5 minutos",
     speaker: "Apresentação dos pitchs e encerramento",
     time: "18:30",
     status: "/assets/img/icones/remove.ico",

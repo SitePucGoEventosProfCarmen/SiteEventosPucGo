@@ -88,7 +88,7 @@ let Courses = [
     desc: ``,
     date: '19/10',
     time: '17:30',
-    place: 'A definir',
+    place: 'Presencial: Auditório III Área II',
     //link: ""
   },
   {
