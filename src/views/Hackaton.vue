@@ -588,7 +588,7 @@ export default class MiniCourses extends Vue {
   private coursesList = miniCourses_Section;
   private title = "";
   private description = "";
-  private background = "assets/img/bannerhackthon.png";
+  private background = "assets/img/bannerhackthon.jpg";
 
   constructor() {
     super();
