@@ -35,7 +35,7 @@
       <ul>
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackathon" tag="li">Hackathon</router-link>
-        <router-link to="/manutencao" tag="li">Desafio CD</router-link>
+        <router-link to="/desafio-cd" tag="li">Desafio CD</router-link>
         <router-link to="/manutencao" tag="li">TCC</router-link>        
       </ul>
       </div>

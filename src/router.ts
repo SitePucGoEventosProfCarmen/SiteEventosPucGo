@@ -24,6 +24,12 @@ const router = new Router({
       component: () =>
         import(/* webpackChunkName: "account" */ "./views/Maintenance.vue")
     },
+    {
+      path: "/desafio-cd",
+      name: "desafio cd",
+      component: () =>
+      import(/* webpackChunkName: "account" */ "./views/DesafioCD.vue")
+    },
 
     /*{
       path: "/minicursos",
