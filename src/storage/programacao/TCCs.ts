@@ -56,7 +56,7 @@ let TCCs = [
       title: "USO DA BLOCKCHAIN PARA AUTENTICIDADE DE DOCUMENTOS t2",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       orientador: "ADRIANA SILVEIRA DE SOUZA",
-      estudantes: "Mariana Santa Clara Campelo Zanatta", //se tiver mais de 1, separar por ;
+      estudantes: "Gustavo Toledo de Souza", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "11/12",
       time: "09:00-10:30",
@@ -67,108 +67,46 @@ let TCCs = [
       nomeSegundoMembroBanca: "Juliano Lopes de Oliveira ",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
-      curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
-      title: "tcc aleatorio 2 - tema aleatorio2 t2",
-      orientador: "jose2",
-      estudante: "joao2",
-      warning: "",
+      title: "A percepção de profissionais de software sobre segurança em banco de dados",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ADRIANA SILVEIRA DE SOUZA",
+      estudantes: "Mariana Santa Clara Campelo Zanatta", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
       date: "11/12",
-      time: "10:00-11:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC2
+      time: "18:00-19:30",
+      place: "205D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Solange Silva",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Juliano Lopes de Oliveira",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
-      title: "tcc aleatorio22 - tema aleatorio t1",
-      orientador: "jose22",
-      estudante: "joao2",
-      warning: "",
+      title: "ANÁLISE COMPARATIVA ENTRE OS MODELOS: MPS.BR (MELHORIA DE PROCESSOS DE SOFTWARE BRASILEIRO) RH e P-CMM (PEOPLE CAPABILITY MATURITY MODEL)	",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ADRIANA SILVEIRA DE SOUZA",
+      estudantes: "ROMÁRIO EDUARDO DE ALMEIDA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
       date: "12/12",
-      time: "08:00-09:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC1
+      time: "07:15-08:45",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Solange Silva",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marco Aurelio de Souza Mangan",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
-    {
-      title: "tcc aleatorio 2 - tema aleatorio2 t1",
-      orientador: "jose2",
-      estudante: "joao2",
-      warning: "",
-      date: "12/12",
-      time: "10:00-11:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC1
-    },
-    {
-      title: "tcc aleatorio22 - tema aleatorio t2",
-      orientador: "jose22",
-      estudante: "joao2",
-      warning: "",
-      date: "13/12",
-      time: "08:00-09:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC2
-    },
-    {
-      title: "tcc aleatorio22 - tema aleatorio t1",
-      orientador: "jose22",
-      estudante: "joao2",
-      warning: "",
-      date: "11/12",
-      time: "08:00-09:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC1
-    },
-    {
-      title: "tcc aleatorio 2 - tema aleatorio2 t1",
-      orientador: "jose2",
-      estudante: "joao2",
-      warning: "",
-      date: "14/12",
-      time: "10:00-11:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC1
-    },
-    {
-      title: "tcc aleatorio 2 - tema aleatorio2 t2",
-      orientador: "jose2",
-      estudante: "joao2",
-      warning: "",
-      date: "14/12",
-      time: "10:00-11:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC2
-    },
-    {
-      title: "tcc aleatorio22 - tema aleatorio t1",
-      orientador: "jose22",
-      estudante: "joao2",
-      warning: "",
-      date: "15/12",
-      time: "08:00-09:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC1
-    },
-    {
-      title: "tcc aleatorio 2 - tema aleatorio2 t2",
-      orientador: "jose2",
-      estudante: "joao2",
-      warning: "",
-      date: "15/12",
-      time: "10:00-11:30",
-      place: "",
-      bancaExaminadora: "",
-      tipoTCC: enum_tcc.TCC2
-    },
+    
   ]
 
   
