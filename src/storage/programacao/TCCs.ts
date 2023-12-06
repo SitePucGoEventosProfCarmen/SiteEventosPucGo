@@ -1456,29 +1456,259 @@ let TCCs = [
       curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
-    
-    
-  ]
-/*
     {
-      title: "",
+      title: "TESTE DE VIABILIDADE DE ACESSO PARA Xanthomonas axonopodis e Colletotrichum  lindemuthianum SUBMETIDOS AO PROCESSO DE LIOFILIZAÇÃO",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      orientador: "",
-      estudantes: "", //se tiver mais de 1, separar por ;
+      orientador: "ANA MARIA DA SILVA CURADO LINS",
+      estudantes: "Yara Jessie Alves Ferreira", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "",
-      time: "",
-      place: "",
+      date: "11/12",
+      time: "09:00-10:00",
+      place: "Auditório Bloco S (Campus 2)",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "",
+      nomePrimeiroMembroBanca: "Flávio Gonçalves de Oliveira Filho",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "",
+      nomeSegundoMembroBanca: "Roberta Paula de Jesus",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
-      curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
     },
-*/
+    {
+      title: "TESTE DE COMPATIBILIDADE DO BRADYRHIZOBIUM COM 24 ESPÉCIES DE TRICHODERMA NA SOJA (Glycine max)",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ANA MARIA DA SILVA CURADO LINS",
+      estudantes: "RODRIGO FERNANDES SALES", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "08:00-09:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Roberta Paula de Jesus ",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Andressa Almeida",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Inoculação Bacteriana no Desenvolvimento do Arroz Irrigado",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "FELIPE CORREA VELOSO DOS SANTOS",
+      estudantes: "Carlos Antônio da Silva Filho", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "15:15-16:45",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Roberta de Paula Jesus",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Fábio José Gonçalves",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Efeito de diferentes dosagens de FTE na germinação e crescimento inicial do arroz ( Oriza sativa L.).",
+      titulacaoOrientador: titulacoes[enum_titulacoes.POS_DR], //usar a enum e não a string literal
+      orientador: "JALES TEIXEIRA CHAVES FILHO",
+      estudantes: "Alan Calixto Alvarenga", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "11:00-12:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Roberta Paula de Jesus",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Adriano de Melo Ferreira",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Análise microbiológica do açafrão-índia e do açafrão-da-terra",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "LUCIANA CASALETTI",
+      estudantes: "INGRID NASCIMENTO BALDUINO", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "08:00-09:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ENG_AGRONOMA], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Caroline Domingos Bittencourt (UFG)",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Luciana Domingues Bittencourt Ferreira (UEG)",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Qualidade pós-colheita de alface submetida a diferentes tratamentos de sanitização",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "LUCIANA CASALETTI",
+      estudantes: "MARLUCIO FRANÇA PEDROSO", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "09:00-10:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Danns Pereira Barbosa",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Luciana Domingues Bittencourt Ferreira (UEG)",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Avaliação de Métodos para superação da dormência de sementes de acácia australiana (Acacia mangium)",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "LUIZ CARLOS BARCELLOS",
+      estudantes: "Brenno Neri Peixoto", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "10:45-11:45",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Rízia da Silva Andrade",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Jales Teixeira Chaves Filho",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Estudo da Viabilidade Econômica e Uso de Produtos Biológicos na Cultura do Feijão (Phaseolus vulgaris L.)",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "MARTHA NASCIMENTO CASTRO",
+      estudantes: "ANA CAROLINA AOKI DE SOUSA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "08:00-09:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Fábio José Gonçalves",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberta Paula de Jesus",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Qualidade fisiológica de sementes salvas e certificadas de soja Glycine max L.)",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "MARTHA NASCIMENTO CASTRO",
+      estudantes: "VITOR VINICIUS CARVALHO", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "10:00-11:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ENG_AGRONOMO], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Mateus de Souza Valente",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberta Paula de Jesus",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Avaliação do consumo foliar da largarta Chrysodeixis includens alimentada com de soja tratada com bioinsumos.",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "RIZIA DA SILVA ANDRADE",
+      estudantes: "EDUARDO SILVA REZIO", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "14:00-15:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Roberta Paula de Jesus",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Aline Cristiane Kamyia",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Avaliação do consumo foliar da largarta Rachiplusia nu alimentada com soja tratada com bioinsumos",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "RIZIA DA SILVA ANDRADE",
+      estudantes: "GUILHERME HENRIQUE BORGES OLIVEIRA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "15:00-16:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Aline Cristiane Kamyia",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberta Paula de Jesus",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Isolamento e caracterização de bactérias da rizosfera de um bambuzal",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "ROBERTA PAULA DE JESUS",
+      estudantes: "Igor Cabral Servalo", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "08:00 - 09:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Rízia da Silva Andrade ",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Fabio José Gonçalves (AgroLab)",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Influência de bioprodutos no aumento da produtividade de silagem da cultivar Limagrain LG 36720VIP3 de milho",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "RODRIGO MARTINEZ CASTRO",
+      estudantes: "HYGOR NEVES BERQUÓ DE PASSOS", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "09:00-10:00",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Fábio José Gonçalves",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberta Paula de Jesus",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "Uso do sensoriamento remoto no monitoramento de plantas daninhas na cana-de-açúcar",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "RODRIGO MARTINEZ CASTRO",
+      estudantes: "GABRIEL NETTO NAVES", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "10:45-11:45",
+      place: "Auditório Bloco S (Campus 2)",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Luiz Carlos Barcellos",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Enilton José Bernardes Junior",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    }, 
+  ]
   
   TCCs = TCCs.sort((a, b) => {
     if(a.date < b.date) return -1;
