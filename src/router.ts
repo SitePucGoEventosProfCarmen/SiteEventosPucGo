@@ -24,6 +24,12 @@ const router = new Router({
       component: () =>
         import(/* webpackChunkName: "account" */ "./views/Maintenance.vue")
     },
+    {
+      path: "/TCC",
+      name: "TCC",
+      component: () =>
+        import(/* webpackChunkName: "account" */ "./views/Maintenance.vue") //alterar para ./views/TCC.vue
+    },
 
     /*{
       path: "/minicursos",

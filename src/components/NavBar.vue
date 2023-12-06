@@ -15,7 +15,7 @@
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackathon" tag="li">Hackathon</router-link>
         <router-link to="/manutencao" tag="li">Desafios</router-link>
-        <router-link to="/manutencao" tag="li">TCC</router-link>
+        <router-link to="/TCC" tag="li">TCC</router-link>
       </ul>
     </div>
 
@@ -36,7 +36,7 @@
         <router-link to="/" tag="li">Home</router-link>  
         <router-link to="/hackathon" tag="li">Hackathon</router-link>
         <router-link to="/manutencao" tag="li">Desafio CD</router-link>
-        <router-link to="/manutencao" tag="li">TCC</router-link>        
+        <router-link to="/TCC" tag="li">TCC</router-link>
       </ul>
       </div>
     </div>
