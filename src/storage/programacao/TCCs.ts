@@ -56,6 +56,48 @@ const titulacoes : { [key in enum_titulacoes]: string } = {
 
 
 let TCCs = [
+
+
+  {
+    title: "USO DA BLOCKCHAIN PARA AUTENTICIDADE DE DOCUMENTOS t2",
+    titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+    orientador: "ADRIANA SILVEIRA DE SOUZA",
+    estudantes: "Gustavo Toledo de Souza", //se tiver mais de 1, separar por ;
+    warning: "", //deixe vazio
+    date: "11/12",
+    time: "09:00-10:30",
+    place: "206D, área II",
+    titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+    nomePrimeiroMembroBanca: "André Luiz Alves",
+    titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+    nomeSegundoMembroBanca: "Juliano Lopes de Oliveira ",
+    titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+    nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+    curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+    tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+  },
+  {
+    title: "A percepção de profissionais de software sobre segurança em banco de dados",
+    titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+    orientador: "ADRIANA SILVEIRA DE SOUZA",
+    estudantes: "Mariana Santa Clara Campelo Zanatta", //se tiver mais de 1, separar por ;
+    warning: "", //deixe vazio
+    date: "11/12",
+    time: "18:00-19:30",
+    place: "205D, área II",
+    titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+    nomePrimeiroMembroBanca: "Solange Silva",
+    titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+    nomeSegundoMembroBanca: "Juliano Lopes de Oliveira",
+    titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+    nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+    curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+    tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+  },
+
+
+
+
     {
       title: "Aplicação web para Gestão de Fidelidade",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -361,24 +403,7 @@ let TCCs = [
       curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
-    {
-      title: "Sistema construtivo em painéis monolíticos de poliestireno expandido (EPS) em casa residenciais - Estudo de caso ",
-      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      orientador: "ADRIANE BORGES DE PAULA COUTO",
-      estudantes: "Raquel Cristina; LORENA CARVALHO PADILHA", //se tiver mais de 1, separar por ;
-      warning: "", //deixe vazio
-      date: "11/12",
-      time: "07:15-08:45",
-      place: "204D, área II",
-      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "Edson Nishi ",
-      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Rosana Melo de Lucas Brandão ",
-      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
-      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
-      curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
-    },
+
     {
       title: "Sistema construtivo em painéis monolíticos de poliestireno expandido (EPS) em casa residenciais - Estudo de caso ",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -395,6 +420,24 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "ANÁLISE COMPARATIVA ENTRE OS MODELOS: MPS.BR (MELHORIA DE PROCESSOS DE SOFTWARE BRASILEIRO) RH e P-CMM (PEOPLE CAPABILITY MATURITY MODEL)	",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ADRIANA SILVEIRA DE SOUZA",
+      estudantes: "ROMÁRIO EDUARDO DE ALMEIDA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "07:15-08:45",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Solange Silva",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marco Aurelio de Souza Mangan",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
@@ -2978,7 +3021,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "TESTE DE COMPATIBILIDADE DO BRADYRHIZOBIUM COM 24 ESPÉCIES DE TRICHODERMA NA SOJA (Glycine max)",
@@ -2996,8 +3039,28 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
+
+    {
+      title: "Método construtivo de uma laje de subpressão no município de Goiânia - Estudo de caso",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ADRIANE BORGES DE PAULA COUTO",
+      estudantes: "Raquel Cristina; LORENA CARVALHO PADILHA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "07:15-08:45",
+      place: "204D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Edson Nishi",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Rosana Melo de Lucas Brandão",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    
     {
       title: "Inoculação Bacteriana no Desenvolvimento do Arroz Irrigado",
       titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
@@ -3014,7 +3077,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Efeito de diferentes dosagens de FTE na germinação e crescimento inicial do arroz ( Oriza sativa L.).",
@@ -3032,7 +3095,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Análise microbiológica do açafrão-índia e do açafrão-da-terra",
@@ -3050,7 +3113,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Qualidade pós-colheita de alface submetida a diferentes tratamentos de sanitização",
@@ -3068,7 +3131,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Avaliação de Métodos para superação da dormência de sementes de acácia australiana (Acacia mangium)",
@@ -3086,7 +3149,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Estudo da Viabilidade Econômica e Uso de Produtos Biológicos na Cultura do Feijão (Phaseolus vulgaris L.)",
@@ -3104,7 +3167,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Qualidade fisiológica de sementes salvas e certificadas de soja Glycine max L.)",
@@ -3122,7 +3185,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Avaliação do consumo foliar da largarta Chrysodeixis includens alimentada com de soja tratada com bioinsumos.",
@@ -3140,7 +3203,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Avaliação do consumo foliar da largarta Rachiplusia nu alimentada com soja tratada com bioinsumos",
@@ -3158,7 +3221,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Isolamento e caracterização de bactérias da rizosfera de um bambuzal",
@@ -3176,7 +3239,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Influência de bioprodutos no aumento da produtividade de silagem da cultivar Limagrain LG 36720VIP3 de milho",
@@ -3194,7 +3257,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "Uso do sensoriamento remoto no monitoramento de plantas daninhas na cana-de-açúcar",
@@ -3212,7 +3275,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     }, 
 
   ]
