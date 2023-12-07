@@ -28,7 +28,7 @@ const router = new Router({
       path: "/TCC",
       name: "TCC",
       component: () =>
-        import(/* webpackChunkName: "account" */ "./views/Maintenance.vue") //alterar para ./views/TCC.vue
+        import(/* webpackChunkName: "account" */ "./views/TCC.vue")
     },
 
     /*{
