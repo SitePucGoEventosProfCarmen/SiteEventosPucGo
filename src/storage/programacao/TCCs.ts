@@ -156,7 +156,7 @@ let TCCs = [
       title: "SEGURANÇA CIBERNÉTICA EM REDES SOCIAIS: SIMULAÇÃO DE ATAQUE DE ENGENHARIA SOCIAL COM CHATBOTS E ESTRATÉGIAS DE CONTRAMEDIDAS",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       orientador: "ANGELICA DA SILVA NUNES",
-      estudantes: "ALUISIO LUCIO DOS SANTOS NETOA", //se tiver mais de 1, separar por ;
+      estudantes: "ANA ALINE DOURADO MACHADO ROCHA", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "12/12",
       time: "20:30-21:15",
@@ -647,7 +647,7 @@ let TCCs = [
       estudantes: "Pedro Henrique Albuquerque Roriz", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "13/12",
-      time: "09:00-09:45",
+      time: "18:45-19:30",
       place: "",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Joriver Rodrigues Canêdo",
@@ -2635,7 +2635,7 @@ let TCCs = [
       warning: "", //deixe vazio
       date: "13/12",
       time: "13:30-15:00",
-      place: "207D, área II",
+      place: "104D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Vitor Hugo Martins e Resende",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
@@ -3441,10 +3441,6 @@ let TCCs = [
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     */
-     
-      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
-    }, 
-
   ]
   
   TCCs = TCCs.sort((a, b) => {
