@@ -226,7 +226,7 @@ let TCCs = [
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Fabrício Schlag",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Vicente Pulo de Camargo",
+      nomeSegundoMembroBanca: "Vicente Paulo de Camargo",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
@@ -837,7 +837,7 @@ let TCCs = [
       place: "206D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "EUGENIO JULIO MESSALA CANDIDO CARVALHO",
-      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomeSegundoMembroBanca: "PEDRO ARAUJO VALE",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
@@ -883,7 +883,7 @@ let TCCs = [
     {
       title: "Implantação de firewall em Raspberry Pi",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      orientador: "MARCELO ANTONIO ADAD DE ARAUJOMARCELO ANTONIO ADAD DE ARAUJO",
+      orientador: "MARCELO ANTONIO ADAD DE ARAUJO",
       estudantes: "Hebert Cordeiro De Souza", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "15/12",
@@ -1070,7 +1070,7 @@ let TCCs = [
       time: "18:45-20:15",
       place: "207D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "Erika Sakai",
+      nomePrimeiroMembroBanca: "Antonio Claret A. G. Junior",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomeSegundoMembroBanca: "Tatiana Renata Pereira Jucá",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
@@ -1089,8 +1089,8 @@ let TCCs = [
       place: "207D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Vitor Hugo Martins e Resende",
-      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Vinícius Carvalhaes ",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Ricardo Caetano Rezende ",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.ENGENHARIA_DE_PRODUCAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
@@ -1142,9 +1142,9 @@ let TCCs = [
       time: "09:00-10:30",
       place: "205D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "Gustavo Vinhal",
+      nomePrimeiroMembroBanca: "Gustavo Siqueira Vinhal",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Fernando Abadia",
+      nomeSegundoMembroBanca: "Fernando Gonçalves Abadia",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
@@ -1196,7 +1196,7 @@ let TCCs = [
       time: "09:00-10:30",
       place: "204D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "Jose Luiz de Freitas Jumior",
+      nomePrimeiroMembroBanca: "José Luiz de Freitas Júnior",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomeSegundoMembroBanca: "Rafael Leal Martins",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
@@ -1214,7 +1214,7 @@ let TCCs = [
       time: "10:45-12:15",
       place: "204D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
-      nomePrimeiroMembroBanca: "Luiz de Freitas Junior",
+      nomePrimeiroMembroBanca: "José Luiz de Freitas Júnior",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomeSegundoMembroBanca: "Rafael Leal Martins",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
@@ -1589,7 +1589,7 @@ let TCCs = [
       estudantes: "ANA CAROLINA AOKI DE SOUSA", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "12/12",
-      time: "08:00-09:00",
+      time: "09:00-10:00",
       place: "Auditório Bloco S (Campus 2)",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Fábio José Gonçalves",
@@ -1707,7 +1707,172 @@ let TCCs = [
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
-    }, 
+    },
+    {
+      title: "A influência do treinamento em simulador de voo no âmbito de gerenciamento de emergências",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "ANNA PAULA BECHEPECHE",
+      estudantes: "Gabriel Figueiredo Vilela", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "10:45-12:15",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "William de Carvalho Xavier",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Francis Ferronato",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "O voo a vela como ferramenta de desenvolvimento de habilidades cognitivas para pilotos",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Raul Francé Monteiro",
+      estudantes: "Otávio Augusto Costa Lara", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "10:45-12:15",
+      place: "204D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Nagi Hanna Salm Costa",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Salmen Chaquip Bukzem",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "O uso da inteligência artificial aplicado na aviação geral",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "ANNA PAULA BECHEPECHE",
+      estudantes: "Alessandro Roque Dias Júnior ", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "09:00-10:30",
+      place: "602D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Raul Francé Monteiro",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Francis Ferronato",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "MODELAGEM MATEMÁTICA E META-HEURÍSTICA ANSGA-II APLICADAS NA OTIMIZAÇÃO DE CUSTO E EMISSÃO DE CO2 PARA O PROBLEMA DO TRANSPORTE INTERMODAL DE SOJA",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ALEXANDRE RIBEIRO",
+      estudantes: "Eliel Lucas de Oliveira Silba", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "20:30-22:00",
+      place: "205D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.POS_DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Maria José Pereira Dantas",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Max Gontijo de Oliveira",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "Customer Experience",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "Andréluiz da Silva Fernandes",
+      estudantes: "Geraldo Cordeiro de Toledo Neto", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "07:15-08:45",
+      place: "205D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Nagi Hanna Salm Costa",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tammyse Araújo da Silva",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "Impactos dos emissores de gases de efeito estufa e estratégias de sustentabilidade na aviação",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "ANNA PAULA BECHEPECHE",
+      estudantes: "Vitor Ricardo Fiuza Teodoro Silva", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "07:15-08:45",
+      place: "202D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ycarim Melgaço Barbosa",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "William de Carvalho Xavier",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "Dificuldades com a implantação do SRM na aviação executiva e o potencial para uma padronização nos níveis de segurança operacionais adequados",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Raul Francé Monteiro",
+      estudantes: "Kaê Felipe de Frazão Tibúrcio", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "09:00-10:30",
+      place: "202D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Anna Paula Bechepeche",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "William de Carvalho Xavier",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "IMPLEMENTAÇÃO COMPUTACIONAL PARA O AUTOAPRENDIZADO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "ALBERTO VILELA CHAER",
+      estudantes: "ÍGOR SOARES SIQUEIRA", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "18/12",
+      time: "17:00-18:30",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "LUCIANO CAETANO",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "MURILO MEIRON DE PÁDUA SOARES",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    /*
+    {
+      title: "",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "",
+      estudantes: "", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "",
+      time: "",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    */
+     
   ]
   
   TCCs = TCCs.sort((a, b) => {
