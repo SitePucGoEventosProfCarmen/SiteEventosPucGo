@@ -25,7 +25,8 @@ enum enum_cursos {
   ENGENHARIA_DE_CONTROLE_E_AUTOMACAO,
   ENGENHARIA_DE_PRODUCAO,
   ENGENHARIA_ELETRICA,
-  ARQUITETURA_E_URBANISMO
+  ARQUITETURA_E_URBANISMO,
+  DESIGN
 }
 
 const cursos : { [key in enum_cursos]: string } = {
@@ -37,7 +38,8 @@ const cursos : { [key in enum_cursos]: string } = {
   [enum_cursos.ENGENHARIA_DE_CONTROLE_E_AUTOMACAO] : "Engenharia de Controle e Automação",
   [enum_cursos.ENGENHARIA_DE_PRODUCAO] : "Engenharia de Produção",
   [enum_cursos.ENGENHARIA_ELETRICA] : "Engenharia Elétrica",
-  [enum_cursos.ARQUITETURA_E_URBANISMO] : "Arquitetura e Urbanismo"
+  [enum_cursos.ARQUITETURA_E_URBANISMO] : "Arquitetura e Urbanismo",
+  [enum_cursos.DESIGN] : "Design"
 };
 
 const titulacoes : { [key in enum_titulacoes]: string } = {
@@ -59,7 +61,7 @@ let TCCs = [
 
 
   {
-    title: "USO DA BLOCKCHAIN PARA AUTENTICIDADE DE DOCUMENTOS t2",
+    title: "USO DA BLOCKCHAIN PARA AUTENTICIDADE DE DOCUMENTOS",
     titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
     orientador: "ADRIANA SILVEIRA DE SOUZA",
     estudantes: "Gustavo Toledo de Souza", //se tiver mais de 1, separar por ;
@@ -464,9 +466,9 @@ let TCCs = [
       orientador: "ALEXANDRE RIBEIRO",
       estudantes: "Vitor Antonio Pimenta Silva", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "15/12",
+      date: "18/12",
       time: "20:30-22:00",
-      place: "202D, área II",
+      place: "204D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Maria José Pereira Dantas",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -2921,9 +2923,9 @@ let TCCs = [
       orientador: "VIVIANE VAZ MONTEIRO",
       estudantes: "Daniel Damásio Vieira; Renan Antônio Clemente Pinto ", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "16/12",
+      date: "15/12",
       time: "10:45-12:15",
-      place: "206D, área II",
+      place: "204D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Marcellus Isaac Lemos Gomes ",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -3439,7 +3441,474 @@ let TCCs = [
       curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
-    
+    {
+      title: "O DESIGN DE AMBIENTES COMO AGENTE PARA A REVITALIZAÇÃO DA BIBLIOTECA PÚBLICA MUNICIPAL MARIETA TELLES MACHADO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Marília Teixeira",
+      estudantes: "Eliane Souto Silva", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "07:15-08:15",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Genilda Alexandria",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tai Hsuan An",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "DESIGN DE AMBIENTES PARA ESPAÇOS MAKER",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Tai Hsuan An",
+      estudantes: "Julio Marques da Silva Santos", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "08:30-09:30",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Denise Pacheco",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "VALORIZAÇÃO DE ELEMENTOS NATIVOS DO CERTADO GOIANO NO DESIGN DE JOIAS CONTEMPORÂNEAS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Tai Hsuan An",
+      estudantes: "Daniel Sabino de Freitas Neves", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "09:45-10:45",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Vânia Bueno",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Maurício Azeredo",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "INTRODUÇÃO DE ELEMENTOS CULTURAIS BRASILEIROS EM CRIAÇÃO DE HISTÓRIAS EM QUADRINHOS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Tai Hsuan An",
+      estudantes: "Gabriel Franco de Sousa Gomes Gerais", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "12/12",
+      time: "11:00-12:00",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Nélio Neves",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "João Paulo Alves",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "DESIGN COMO FERRAMENTA DE CONTRIBUIÇÃO PARA LIDAR COM A PROCRASTINAÇÃO ACADÊMICA",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Marília Teixeira",
+      estudantes: "Mateus do Carmo Abreu", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "07:15-08:15",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Genilda Alexandria",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Ana Paula Bandeira",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "ESTRATÉGIAS SUSTENTÁVEIS PARA DESIGN DE AMBIENTES EDUCACIONAIS BASEADOS EM VALORES HUMANOS: A ESCOLA SATHYA SAY",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Marília Teixeira",
+      estudantes: "Clara Resplande Lopes", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "08:30-09:30",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Genilda Alexandria",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tai Hsuan An",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "COLORDALT: DESIGN E ACESSIBILIDADE PARA COMPOSIÇÃO DE PALETAS DE COR POR PROFISSIONAIS CRIATIVOS COM DALTONISMO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Genilda Alexandria",
+      estudantes: "Gabriel Gomes Martins", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "09:45-10:45",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Nancy de Melo",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "RPG E SEU POTENCIAL NO DESENVOLVIMENTO DE HABILIDADES SOCIAIS E PEDAGÓGICAS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Tai Hsuan An",
+      estudantes: "Eduardo Rodelli Magri", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "11:00-12:00",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: " João Paulo Alves",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "PROJETO DE TALHERES PARA PESSOAS COM REDUÇÃO DE MOBILIDADE DOS MEMBROS SUPERIORES",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Denise Pacheco",
+      estudantes: "Eduardo Rodelli Magri", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "07:15-08:15",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Tai Hsuan An",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Genilda Alexandria",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "MOBILIARIO PARA ESPACOS REDUZIDOS, AUTO PRODUÇÃO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "Maurício Azeredo",
+      estudantes: "Diogo Silva Póvoa", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "08:30-09:30",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Tai Hsuan An",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marília Teixeira",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "STOP MOTION COMO FERRAMENTA DE CONSCIENTIZAÇÃO SOBRE A IMPORTÂNCIA DO SÍTIO ARQUEOLÓGICO DE SERRANÓPOLIS - GOIÁS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Genilda Alexandria",
+      estudantes: "Natália Cordeiro Rocha", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "09:45-10:45",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Flávio Gomes",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "A APROPRIAÇÃO DE SÍMBOLOS NO GOVERNO BOLSONARO: O AUDIOVISUAL E SUAS POSSIBILIDADES DE REFLEXÃO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Ana Paula Bandeira",
+      estudantes: "João Sávio Almeida Carvalho", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "11:00-12:00",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Flávio Gomes",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marcos Costa",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "HAVVA DESIGN BOX: O DESIGN THINKING COMO ABORDAGEM PARA SE PENSAR O BEM-ESTAR DO DESIGNER",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Genilda Alexandria",
+      estudantes: "Luiza Carvalho e Sousa", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "07:15-08:15",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marcos Costa",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "DESIGN E DESENVOLVIMENTO INFANTIL: O USO DE PERSONAGENS PARA UM CONSULTÓRIO PEDIÁTRICO MAIS HUMANIZADO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Genilda Alexandria",
+      estudantes: "Pedro Henrique da Veiga Rodarte Vale", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "08:30-09:30",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Cláudio Aleixo",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "AFETO SONORO: UMA EXPERIÊNCIA IMERSIVA ATRAVÉS DA MÚSICA E DO DESIGN",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Ana Paula Bandeira",
+      estudantes: "Camilla Giovanna Carvalho Carneiro Brazão", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "09:45-10:45",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Genilda Alexandria",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "BORBOLETAS DE VIDRO: JOIAS SEM PARADIGMAS - PROJETO DE MARCA DE JOIAS INCLUSIVA",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Ana Paula Bandeira",
+      estudantes: "Lucas Vinícius Valadares", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "11:00-12:00",
+      place: "208D, área III",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Fernanda Manço",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Genilda Alexandria",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "A importância da gestão de riscos para a eficiência operacional em aeroportos",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Anna Paula Bechepeche",
+      estudantes: "Jhulie Ferreira Holanda", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "13/12",
+      time: "13:30-15:00",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Raul Francé Monteiro",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Salmen Chaquip Buckzem",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "Hidrogênio: O Futuro Combustível da Aviação Sustentável",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "ANDRELUIZ DA SILVA FERNANDES",
+      estudantes: "Felipe Fante de Oliveira", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "14/12",
+      time: "09:00-10:30",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.POS_DR], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Humberto César Machado",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberto Márcio dos Santos",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "A evolução dos materiais e dos padrões de manutenção na construção aeronáutica como fator de mitigação no descarte de resíduos",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "ANDRELUIZ DA SILVA FERNANDES",
+      estudantes: "Osmar Paulo de Freitas Vieira Reis", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "15/12",
+      time: "07:15-08:45",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Salmen Chaquip Bukzem",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Roberto Márcio dos Santos",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    {
+      title: "ACESSIBILIDADE DIGITAL",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "Maurício Azeredo",
+      estudantes: "Janer Rêgo", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "08/12",
+      time: "08:45-09:30",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tai Hsuan An",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "DESIGN DE AMBIENTES: DO APÁTICO AO EMPÁTICO",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "Maurício Azeredo",
+      estudantes: "Maria Eduarda Teixeira", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "08/12",
+      time: "09:30-10:15",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tai Hsuan An",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "TELAS NA INFÂNCIA PÓS-PANDEMIA: EXPLORANDO AS POSSÍVEIS DIFICULDADES E ESTRATÉGIAS DE INTERVENÇÃO ATRAVÉS DE ATIVIDADES SENSORIAIS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      orientador: "Maurício Azeredo",
+      estudantes: "Mariana Assmus", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "08/12",
+      time: "10:15-11:00",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Tai Hsuan An",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "PRÁTICA DE EXERCÍCIOS FÍSICOS EM ESPAÇOS RESIDENCIAIS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Tai Hsuan An",
+      estudantes: "João Vitor Carvalho", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "08/12",
+      time: "11:00-11:45",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marília Teixeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Maurício Azeredo",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "O USO DE LIVRO EXPERIMENTAL NO PROCESSO DE ALFABETIZAÇÃO DE CRIANÇAS: UM ESTUDO SOBRE O IMPACTO NA FORMAÇÃO DE PROFESSORES E NO DESENVOLVIMENTO DAS HABILIDADES DE LEITURA E ESCRITA",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Ana Paula Bandeira",
+      estudantes: "Rodrigo Fidelis", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "08:00-08:45",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Marcos Costa",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Genilda Alexandria",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "O OURO DO CERRADO GOIANO: UM PROJETO DE MANUTENÇÃO E VALORIZAÇÃO DE PRODUTOS COM INDICAÇÃO GEOGRÁFICA ATRAVÉS DA ÓTICA DO DESIGN",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "Genilda Alexandria",
+      estudantes: "Débora Antônia", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "08:45-09:30",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Marcos Costa",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
+    {
+      title: "A VISUALIDADE DAS OBRAS DE J.R.R. TOLKIEN REPRESENTADA POR MEIO DE INFOGRÁFICOS",
+      titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      orientador: "Marcos Costa",
+      estudantes: "Gustavo Mendonça", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "09:30-10:15",
+      place: "",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "Ana Paula Bandeira",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Genilda Alexandria",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.DESIGN], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+    },
     /*
     {
       title: "",
