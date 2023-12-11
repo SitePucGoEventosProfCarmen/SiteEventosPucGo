@@ -2137,7 +2137,7 @@ let TCCs = [
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomeSegundoMembroBanca: "Adriane Borges de Paula  Couto",
       titulacaoTerceitoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
-      nomeTerceitoMembroBanca: "Rosana Melo  de Lucas Brandão ", //se não tiver 3º membro, deixar em branco
+      nomeTerceitoMembroBanca: "Rosana Melo de Lucas Brandão", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
@@ -2688,7 +2688,7 @@ let TCCs = [
       estudantes: "HIANKA RODRIGUES SOUZA", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "16/12",
-      time: "07:45-08:45",
+      time: "07:15-08:45",
       place: "202D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Gustavo Siqueira Vinhal",
@@ -3421,6 +3421,25 @@ let TCCs = [
       curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
+    {
+      title: "A influência do treinamento em simulador de voo no âmbito de gerenciamento de emergências",
+      titulacaoOrientador: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+      orientador: "ANNA PAULA BECHEPECHE",
+      estudantes: "Gabriel Figueiredo Vilela", //se tiver mais de 1, separar por ;
+      warning: "", //deixe vazio
+      date: "11/12",
+      time: "10:45-12:15",
+      place: "207D, área II",
+      titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomePrimeiroMembroBanca: "William de Carvalho Xavier",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.ESP], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "Francis Ferronato",
+      titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+      nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+      curso: cursos[enum_cursos.CIENCIAS_AERONAUTICAS], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
+    },
+    
     /*
     {
       title: "",

@@ -23,7 +23,7 @@
           <ul class="nomes-banca-examinadora">
             <li v-if="tcc.nomePrimeiroMembroBanca">{{tcc.titulacaoPrimeiroMembroBanca + " " + tcc.nomePrimeiroMembroBanca}}</li>
             <li v-if="tcc.nomeSegundoMembroBanca">{{tcc.titulacaoSegundoMembroBanca + " " + tcc.nomeSegundoMembroBanca}}</li>
-            <li v-if="tcc.nomeTerceiroMembroBanca">{{tcc.titulacaoTerceiroMembroBanca + " " + tcc.nomeTerceiroMembroBanca}}</li>
+            <li v-if="tcc.nomeTerceitoMembroBanca">{{tcc.titulacaoTerceitoMembroBanca + " " + tcc.nomeTerceitoMembroBanca}}</li>
           </ul>
 
           <h4><strong>Curso(s):</strong> {{ tcc.curso }}</h4>
