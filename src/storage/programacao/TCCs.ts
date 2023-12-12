@@ -3244,13 +3244,13 @@ let TCCs = [
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
-      title: "Influência de bioprodutos no aumento da produtividade de silagem da cultivar Limagrain LG 36720VIP3 de milho",
+      title: "INFLUÊNCIA DE TRÊS BIOPRODUTOS EM PARÂMETROS AGRONÔMICOS DE CULTIVAR DE MILHO PARA SILAGEM",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       orientador: "RODRIGO MARTINEZ CASTRO",
       estudantes: "HYGOR NEVES BERQUÓ DE PASSOS", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "14/12",
-      time: "09:00-10:00",
+      time: "13:30-14:30",
       place: "Auditório Bloco S (Campus 2)",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Fábio José Gonçalves",
