@@ -129,8 +129,8 @@ let TCCs = [
       place: "",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "GERALDO VALERIANO RIBEIRO",
-      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.VAZIO], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "",
+      titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+      nomeSegundoMembroBanca: "FERNANDO GONÇALVES ABADIA",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
@@ -486,7 +486,7 @@ let TCCs = [
       warning: "", //deixe vazio
       date: "12/12",
       time: "09:00-10:30",
-      place: "207D, área II",
+      place: "Auditório 2, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Fabrício Schlag",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
@@ -3589,7 +3589,7 @@ let TCCs = [
       title: "PROJETO DE TALHERES PARA PESSOAS COM REDUÇÃO DE MOBILIDADE DOS MEMBROS SUPERIORES",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       orientador: "Denise Pacheco",
-      estudantes: "Eduardo Rodelli Magri", //se tiver mais de 1, separar por ;
+      estudantes: "Sara Machado Firmino", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "14/12",
       time: "07:15-08:15",
