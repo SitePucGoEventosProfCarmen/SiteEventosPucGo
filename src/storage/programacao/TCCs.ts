@@ -336,7 +336,7 @@ let TCCs = [
       orientador: "TATIANA RENATA PEREIRA JUCA",
       estudantes: "Fabiany Cogo", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "13/12",
+      date: "14/12",
       time: "17:45-18:30",
       place: "",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -2623,7 +2623,7 @@ let TCCs = [
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Antonio Claret A. G. Junior",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Tatiana Renata Pereira Jucá",
+      nomeSegundoMembroBanca: "Marcilon Fonseca de Lima",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.ENGENHARIA_CIVIL], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
@@ -2887,9 +2887,9 @@ let TCCs = [
       orientador: "TATIANA RENATA PEREIRA JUCA",
       estudantes: "Paulo Augusto Alves Ferraz", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "13/12",
+      date: "14/12",
       time: "17:00-18:30",
-      place: "207D, área II",
+      place: "206D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Cybelle Luiza Barbosa Musse",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
@@ -3273,7 +3273,7 @@ let TCCs = [
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Luiz Carlos Barcellos",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
-      nomeSegundoMembroBanca: "Enilton José Bernardes Junior",
+      nomeSegundoMembroBanca: "Vanessa Honorato Domingos",
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
