@@ -2078,8 +2078,8 @@ let TCCs = [
       estudantes: "Gabriel Sales Mendes da Silva", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
       date: "14/12",
-      time: "10:45-12:15",
-      place: "202D, área II",
+      time: "09:00-10:30",
+      place: "206D, área II",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Carlos Daniel de Sousa Bezerra",
       titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
