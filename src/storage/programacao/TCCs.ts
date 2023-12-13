@@ -3277,7 +3277,7 @@ let TCCs = [
       titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
       nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
       curso: cursos[enum_cursos.AGRONOMIA], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
-      tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+      tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
       title: "A influência do treinamento em simulador de voo no âmbito de gerenciamento de emergências",
