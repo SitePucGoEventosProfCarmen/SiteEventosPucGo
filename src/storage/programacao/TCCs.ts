@@ -2954,7 +2954,7 @@ let TCCs = [
       tipoTCC: enum_tcc.TCC2 // se é tcc 1 ou 2
     },
     {
-      title: "BLOCKCHAIN E CONTRATOS INTELIGENTES",
+      title: "USANDO BLOCKCHAIN PARA EMITIR CERTIFICADOS E DIPLOMAS",
       titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       orientador: "DANIEL CORREA DA SILVA",
       estudantes: "VALTECI MARCELINO COELHO JÚNIOR", //se tiver mais de 1, separar por ;
