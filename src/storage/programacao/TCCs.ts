@@ -59,6 +59,44 @@ const titulacoes : { [key in enum_titulacoes]: string } = {
 
 let TCCs = [
 
+  {
+    title: "PenTest",
+    titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+    orientador: "CLAUDIO MARTINS GARCIA",
+    estudantes: "Douglas Martins Ferreira", //se tiver mais de 1, separar por ;
+    warning: "", //deixe vazio
+    date: "16/12",
+    time: "09:00-09:45",
+    place: "",
+    titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+    nomePrimeiroMembroBanca: "Nilson Cardoso Amaral",
+    titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.VAZIO], //usar a enum e não a string literal
+    nomeSegundoMembroBanca: "",
+    titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+    nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+    curso: cursos[enum_cursos.ENGENHARIA_DE_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+    tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+  },
+
+  {
+    title: "PenTest em redes sem fio",
+    titulacaoOrientador: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
+    orientador: "CLAUDIO MARTINS GARCIA",
+    estudantes: "Lídia Paula de Oliveira Silva", //se tiver mais de 1, separar por ;
+    warning: "", //deixe vazio
+    date: "15/12",
+    time: "09:00-09:45",
+    place: "",
+    titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.DR], //usar a enum e não a string literal
+    nomePrimeiroMembroBanca: "Nilson Cardoso Amaral",
+    titulacaoSegundoMembroBanca: titulacoes[enum_titulacoes.VAZIO], //usar a enum e não a string literal
+    nomeSegundoMembroBanca: "",
+    titulacaoTerceitoMembroBanca: "", //usar a enum e não a string literal (se não tiver 3º membro, deixar em branco)
+    nomeTerceitoMembroBanca: "", //se não tiver 3º membro, deixar em branco
+    curso: cursos[enum_cursos.CIENCIA_DA_COMPUTACAO], //usar a enum e não a string literal. Se tiver mais de 1, separar por + "; " +
+    tipoTCC: enum_tcc.TCC1 // se é tcc 1 ou 2
+  },
+
 
   {
     title: "USO DA BLOCKCHAIN PARA AUTENTICIDADE DE DOCUMENTOS",
