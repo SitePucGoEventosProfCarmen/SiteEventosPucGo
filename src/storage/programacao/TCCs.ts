@@ -354,8 +354,8 @@ let TCCs = [
       orientador: "PRISCILLA BORGES DE F RODRIGUES",
       estudantes: "ERIKA PAULA MORAIS", //se tiver mais de 1, separar por ;
       warning: "", //deixe vazio
-      date: "13/12",
-      time: "17:00-17:45",
+      date: "18/12",
+      time: "10:30-11:15",
       place: "",
       titulacaoPrimeiroMembroBanca: titulacoes[enum_titulacoes.MSC], //usar a enum e não a string literal
       nomePrimeiroMembroBanca: "Tatiana Renata Pereira Jucá",
