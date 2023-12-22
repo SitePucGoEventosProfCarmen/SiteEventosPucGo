@@ -29,6 +29,7 @@ import Axios from 'axios'
 @Component
 export default class Carousel extends Vue {
   private items: any
+  private test: any
 
   constructor() {
     super()
@@ -38,21 +39,36 @@ export default class Carousel extends Vue {
         src: '/assets/img/carrossel/3.jpeg'
       }
     ]
+
+    this.test = []
       
     this.carregar();
     
   
   }
 
-  carregar() {
-    Axios.head('/assets/img/carrossel/1.png')
-    .then(res => {
-      if (res.status === 200)
-        console.log('sucesso!');
-    })
-    .catch(error => {
-      console.error(error);
-    })
+  async carregar() {
+
+    const requests = [];
+
+    for (let i = 1; i < 5; i++) {
+      const request = Axios.head(`/assets/img/carrossel/${i}.png`)
+      .then(res => {
+        if (res.headers['content-type'] === 'image/png')
+          return { src: `/assets/img/carrossel/${i}.png` };
+        
+        return null;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+    
+      requests.push(request);
+    }
+  
+    const results = await Promise.all(requests);
+    this.test = results.filter(result => result !== null);
+    console.log(this.test);
   }
 
 }
