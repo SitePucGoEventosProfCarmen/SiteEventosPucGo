@@ -24,6 +24,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Axios from 'axios'
 
 @Component
 export default class Carousel extends Vue {
@@ -37,7 +38,23 @@ export default class Carousel extends Vue {
         src: '/assets/img/carrossel/3.jpeg'
       }
     ]
+      
+    this.carregar();
+    
+  
   }
+
+  carregar() {
+    Axios.head('/assets/img/carrossel/1.png')
+    .then(res => {
+      if (res.status === 200)
+        console.log('sucesso!');
+    })
+    .catch(error => {
+      console.error(error);
+    })
+  }
+
 }
 </script>
 
