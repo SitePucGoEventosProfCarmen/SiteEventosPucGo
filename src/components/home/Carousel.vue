@@ -68,8 +68,8 @@ export default class Carousel extends Vue {
   
     const results = await Promise.all(requests);
     this.test = results.filter(result => result !== null);
-    console.log(this.test[0]);
-    console.log(this.test[1]);
+    console.log(this.test[0].src);
+    console.log(this.test[1].src);
   }
 
 }
