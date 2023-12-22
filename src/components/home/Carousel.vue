@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap class="jcecec-slider" v-if="test.length > 0">
     <v-flex xs12>
-      <v-carousel hide-delimiters height="500px" :interval="3000">
+      <v-carousel hide-delimiters height="500px" :interval="5000">
         <v-carousel-item
           v-for="(item, i) in test"
           :key="i"
