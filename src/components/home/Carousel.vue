@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap class="jcecec-slider">
     <v-flex xs12>
-      <v-carousel hide-controls hide-delimiters height="800px">
+      <v-carousel hide-delimiters height="500px" :interval="3000">
         <v-carousel-item
           v-for="(item, i) in items"
           :key="i"
@@ -12,45 +12,7 @@
           <v-container fill-height>
             <v-layout align-center fill-height justify-center>
               
-              <div class="banner">
-                <!--<img src="assets/img/logo-clean.webp" class="logo" />
-                <img src="assets/img/logo-clean.webp" class="logo back" />
-                <img src="assets/img/logo.png" class="logo-opacity" />-->
-
-                
-                <div>
-                  <div>
-                    <span class="date">17 a 19 de Outubro de 2023</span>
-                  </div>
-                  <hr />
-                  <div>
-                    <span class="jcecec">HACKAPUC</span>
-                  </div>
-                  <div>
-                    <span class="jcecec-sub">
-                      Hackathon 2023 Científica da Escola Politécnica e de Artes
-                    </span>
-                  </div>
-                  <hr />
-                  <div>
-                    <span id="description">
-                      O tema será revelado no dia 17 de Outubro.
-                    </span>
-                  </div>
-                </div>
-
-
-              
-
-                
-                <div class="logo-container" style="width: 300px; height: 300px;">
-                  <img id="logo" src="assets/img/logo.png" 
-                    style="width: 300px; height: 300px;
-                          margin-left: 10px;"/>
-                </div>
-              
-
-              </div>
+             
             </v-layout>
           </v-container>
         </v-carousel-item>
@@ -72,7 +34,7 @@ export default class Carousel extends Vue {
 
     this.items = [
       {
-        src: '/assets/img/slider/3.jpeg'
+        src: '/assets/img/carrossel/3.jpeg'
       }
     ]
   }
@@ -151,8 +113,10 @@ span {
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   .jcecec-slider {
     display: none;
   }
+  */
 }
 </style>

@@ -1,11 +1,13 @@
 <template>
   <div class="obs-page view">
-    <PhotoHeader
+    <!-- <PhotoHeader
       title= ""
       image="/assets/img/banner_escola.jpeg"
       description=""
-    ></PhotoHeader>
+    ></PhotoHeader> -->
 
+    <Carousel></Carousel>
+    
     <Main>
 
       <Paragraph title="Cursos">
@@ -203,12 +205,12 @@
   import PhotoHeader from '@/components/organization/PhotoHeader.vue'
   import Main from '@/components/organization/Main.vue'
   import Paragraph from '@/components/organization/Paragraph.vue'
-  
+  import Carousel from '@/components/home/Carousel.vue'
 
 
   export default {
     components : {
-      PhotoHeader,
+      Carousel,
       Main,
       Paragraph
     }  
